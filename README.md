@@ -49,4 +49,107 @@ Dec 2020
 - line graph 
 - factorial ANOVA
 
+Jan 2021
+- filter
+- mean and standard deviation
+- histogram
+- test for group differences
+
+Feb 2021
+- filter
+- calculate percentage
+- summarise M/SD and plot in bar graph
+- test for group differences
+
+March 2021
+- compute new variable
+- group_by and summarise
+- test for group differences
+- plot relationship between two variables
+
+April 2021
+- compute new variable
+- means / SD
+- t-test
+- bar graph
+
+May 2021
+- compute new variable
+- means/SD
+- correlation
+- scatterplot
+
+----
+
+July 2021
+- compute new variable
+- plot histogram
+- compute descriptives
+- compute mean, do t-test
+
+August 2021
+- compute sumamry score
+- plot histogram
+- compute descriptives
+- compute mean, do t-test
+
+Sept 2021
+- create frequency tables
+- plot grouped bars
+- create frequenct table
+- calculate chi square
+
+----
+
+Oct 2021
+- filter
+- compute M and SD
+- scatterplot
+- correlation
+
+Nov 2021
+
+- filter
+- frequencies
+- histogram
+- anova
+
+
+Dec 2021
+- recode data
+- frequencies
+- plot means
+- t-test
+
+----
+
+Feb 2022
+- compute new variable
+- frequencies table
+- scatterplot
+- correlation
+
+March 2022
+- filter
+- descriptives
+- box plot
+- one sample t-test
+
+
+April 2022
+- recode data
+- descriptives
+- bar plot w error bars
+- one way ANOVA
+
+
+May 2022
+- filter
+- descriptives
+- scatterplot
+- correlation
+
+----
+
+
 

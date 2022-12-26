@@ -1,0 +1,140 @@
+---
+title: "PsiChi: Jan-May 2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+# load packages
+```{r}
+library(tidyverse)
+library(here)
+library(janitor)
+```
+
+# read data 
+
+```{r}
+data <- read_csv(here("data", "LeeOutton20.csv"))
+```
+
+Our January-May 2021 contest uses data from Lee & Outton (2020).
+
+https://osf.io/24653/wiki/home/ (links to paper and .csv)
+
+
+# JANUARY CHALLENGE
+
+Your tasks for the PsiChiR contest include:
+
+## Level 1
+
+Level 1: Remove participants outside of the United States.
+
+## Level 2
+
+Level 2: For the remaining participants, find the mean and standard deviation for "Age."
+
+## Level 3
+
+Level 3: Create a histogram for "Age"
+
+## Level 4
+
+Level 4: Test whether "Age" differed significantly across experimental conditions ("Manipulation").
+
+
+
+# FEB CHALLENGE
+
+
+Your tasks for the PsiChiR contest include:
+
+## Level 1
+
+Level 1: Remove participants outside of the United States AND participants who are not identified as "white" (white participants are coded as "1" for the variable "Race").
+
+## Level 2
+
+Level 2: For the remaining participants, calculate the percentage of participants who fell into each income category (1 through 5).
+
+
+## Level 3
+Level 3: Create a graph (such as a bar graph) that displays the M and SD for "General Support for Affirmative Action" (variable = "AA") across income groups.
+
+## Level 4
+
+Level 4: Test whether "General Support for Affirmative Action" (variable = "AA") differs across income group.
+
+
+
+
+# MARCH CHALLENGE
+
+Your tasks for the PsiChiR contest include:
+
+## Level 1
+
+Level 1: Make a general support for AA policies score by finding the average of the AA1, AA2, AA3, AA4_r, AA5, AA7, and AA8_r variables
+
+## Level 2
+
+Level 2: Calculate descriptives statistics for the general support for AA policies scores based on the manipulation variable.
+
+## Level 3
+
+Level 3: Test the difference in general support for AA policies between the different manipulation groups.
+
+## Level 4
+
+Level 4: Create a graph showing the relationship between general support for AA policies and the manipulation groups.
+
+
+
+
+# APRIL CHALLENGE
+
+Your tasks for the PsiChiR contest include:
+
+## Level 1
+
+Level 1: Compute a mean score for Affirmative Action support for Black Americans by adding the following variables and dividing by 8: AA_Black1, AABlack2, AA_Black3, AA_Black4, AA_Black5, AA_Black6_r, AA_Black7_r, AA_Black8.
+
+## Level 2
+
+Level 2: Calculate the Means and Standard Deviations for this computed variable for each "Manipulation" condition.
+
+## Level 3
+
+Level 3: Conduct a t-test to determine if means on this new variable differ across "Manipulation" condition.
+
+## Level 4
+
+Level 4: Create a bar graph to display the means and standard deviations for each condition.
+
+
+
+# MAY CHALLENGE
+
+Your tasks for the PsiChiR contest include:
+
+## Level 1
+
+Level 1: Compute a mean score for perceived status of Black Americans score by by adding the following variables and dividing by 3: Perceived_Status1, Perceived_Status2, Perceived_Status3.
+
+## Level 2
+
+Level 2: Calculate the Mean and Standard Deviation for this computed variable.
+
+
+## Level 3
+Level 3: Calculate a correlation to determine if this new variable is associated with income.
+
+## Level 4
+
+Level 4: Create a scatterplot to display the association between perceived status and income.
+

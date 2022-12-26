@@ -1,0 +1,96 @@
+---
+title: "psichi March-May 2020"
+author: ""
+date: ''
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# load packages
+```{r}
+library(tidyverse)
+library(here)
+library(janitor)
+```
+
+# read data 
+
+```{r}
+data <- read_csv(here("data", "PsichiR_pilot.csv"))
+```
+
+# March 2020
+
+For this contest, you will be using this dataset: https://osf.io/jfdtk/
+
+The data set is from this publication: https://cdn.ymaws.com/www.psichi.org/resource/resmgr/journal_2019/24_2_crambletalvarez.pdf
+
+A codebook can be found here: https://osf.io/bkd5m/
+
+
+## Level 1
+
+Level 1: Sort the data by GPA from low to high.
+
+## Level 2
+
+Level 2: Produce the means and standard deviations for the following variables:
+
+Male_score (recognition for male psychologists like Sigmund Freud; higher scores = more recognition)
+Female_score (recognition for psychologist women)
+POC_score (recognition for psychologists of color)
+White_score (recognition for white psychologists)
+
+
+## Level 3
+
+Level 3: Create a graph to compare the mean scores for recognition of women and for recognition of men.
+
+## Level 4
+
+Level 4: Run an independent-samples t-test comparing the mean recognition of women (Female_score) variable across male and female participants (Gender).
+
+
+
+# April 2020
+
+## Level 1
+
+Level 1: Remove participants with missing responses for the variable "Age."
+
+## Level 2
+
+Level 2: Provide frequencies of three different age groups: How many people are Less than or equal to 20? How many people between 21-40? How many people are Greater than 40?
+
+## Level 3
+
+Level 3: Create 4 graphs to visualize recognition of any 4 psychologists by age of participant.
+
+## Level 4
+
+Level 4: Run a simple linear regression analysis to determine if you can predict recognition of male psychologists from participant age.
+
+
+
+# May 2020
+
+## Level 1
+
+Level 1 (Data Processing): Write code that will compute all of the eight subscale scores (e.g. "Male_score). Note that these subscales are already present in the data set -- this will give you a good comparison to see if your code works.
+
+## Level 2
+
+Level 2 (Descriptive Statistics): Recreate Table 2 in the publication (bottom left of page 89) -- it doesn't have to look exactly the same, but it must have the same information as the three columns - Subscale, Mean Subscale (SD), and Median Subscale.
+
+## Level 3
+
+Level 3 (Data Visualization): Create a visualization that compares mean scores on the following subscales: women of color, white women, white men, and men of color.
+
+
+## Level 4
+
+
+Level 4 (Inferential Statistics): Write code that recreates the tests for Hypothesis 1 - paired sample non parametric wilcoxan signed ranks test (page 90). https://cdn.ymaws.com/www.psichi.org/resource/resmgr/journal_2019/24_2_crambletalvarez.pdf

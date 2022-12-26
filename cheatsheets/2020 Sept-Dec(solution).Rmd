@@ -1,0 +1,104 @@
+---
+title: "PsiChi Sept - Dec 2020"
+author: "Jen Richmond"
+date: '2022-12-26'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# load packages
+```{r}
+library(tidyverse)
+library(here)
+library(janitor)
+```
+
+# read data 
+
+```{r}
+data <- read_csv(here("data", "NICE CROWD DATA.csv"))
+```
+
+
+# Sept 2020 
+
+Our September 2020 contest uses data from Psi Chi's NICE:CROWD project.
+
+
+Your tasks for the PsiChiR contest include:
+
+## Level 1
+
+Level 1: Remove cases that have missing values on "Countryborn"
+
+## Level 2
+
+Level 2: Find frequencies for the following variables: UserLanguage, Gender, and Race
+
+## Level 3
+Level 3: Create a scatterplot to visualize the relationship between vertical collectivism (COSvcollect) and horizontal collectivism (COShcollect)
+
+## Level 4
+
+Level 4: Calculate Pearson's R correlation coefficient between vertical collectivism and horizontal collectivism. 
+
+# Oct 2020
+
+Your tasks for the PsiChiR contest include:
+
+## Level 1
+
+Level 1: Create a new variable "Duration in minutes" by taking the variable "Duration__in_seconds_" and dividing it by 60.
+
+## Level 2
+
+Level 2: Find the median for this new variable.
+
+## Level 3
+
+Level 3: Create a bar graph to display medians for men and women.
+
+## Level 4
+
+Level 4: Test whether men and women differ on this variable.
+
+
+
+# Nov 2020
+
+Your tasks for the PsiChiR contest include:
+
+## Level 1
+
+Level 1: Recode the FACES satisfaction subscale ("FACEsatis") into three categories: Low (10 - 23), Medium (24 - 37), and High (38 - 50)
+
+## Level 2
+
+Level 2: Calculate the means and standard deviations for the following variables: SSBQTotal, FACEchaotic, and SDQprosocial.
+
+## Level 3
+Level 3: Create a bar graph to compare the SSBQTotal means across FACEsatis groups. Include 95% confidence interval error bars
+
+## Level 4
+Level 4: Test the hypothesis that SSBQTotal scores differ across the three FACEsatis groups.
+
+# Dec 2020
+
+Your tasks for the PsiChiR contest include:
+
+## Level 1
+
+Level 1: Subset and filter your data so you have a dataset that excludes participants with missing values for "Race" and "Gender", and includes only these two variables plus the variable "COShcollect" (horrizontal collectivism)
+
+## Level 2
+Level 2: Calculate the means and standard deviations for COShcollect for all gender categories.
+
+## Level 3
+Level 3: Create a line graph that displays mean COShcollect scores for different race categories, with separate lines for each gender.
+
+## Level 4
+
+Level 4: Conduct a factorial ANOVA to compare COShcollect scores across race and gender.

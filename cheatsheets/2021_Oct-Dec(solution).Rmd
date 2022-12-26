@@ -1,0 +1,102 @@
+---
+title: "PsiChi Oct-Jan 2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# load packages
+```{r}
+library(tidyverse)
+library(here)
+library(janitor)
+library(haven)
+```
+
+# read data 
+
+```{r}
+data <- read_sav(here("data", "data_women_OSF_1.25.sav"))
+```
+
+
+Our OCTOBER 2021 through JANUARY 2022 contests use Hookup data from Goyette & Spencer (2021).
+
+https://osf.io/v4yhu/ contains information about the study.
+
+https://osf.io/9chb7/ contains an SPSS (.sav) file, that can be imported into R using the "foreign" package. Here are instructions on doing this.
+
+
+
+# October 2021
+
+Your tasks for the PsiChiR contest include:
+
+## Level 1 
+
+Remove participants who say they are in a relationship (using variable “RelStatus”, 1 = Single, 2 = in a relationship)
+
+
+## Level 2
+
+Compute Mean and SD for the variable “Age”
+
+
+
+## Level 3
+
+Create a scatterplot plotting “Age” against “HCTotal”
+
+
+
+
+## Level 4
+
+Correlate “Age” with “HCTotal” (the extent to which participants endorse hookup culture)
+
+
+
+
+# November 2021
+
+
+Your tasks for the PsiChiR contest include:
+
+## Level 1
+
+Level 1: Remove participants who say they attend religious services
+
+## Level 2
+Level 2: Determine frequencies for “Year”
+
+## Level 3
+Level 3: Create a histogram for “HCTotal”
+
+
+## Level 4
+
+Level 4: Determine whether HCTotal differs across Year
+
+
+# December
+
+
+Your tasks for the PsiChiR contest include:
+
+## Level 1
+
+Using “Year,” put freshmen and sophomores into one group and juniors/seniors into another group
+
+## Level 2
+
+Determine frequencies for this new variable – how many participants are in each new group
+
+## Level 3
+
+Visually compare these two groups on means for HCTotal
+
+## Level 4
+
+Statistically compare these two groups on means for HCTotal

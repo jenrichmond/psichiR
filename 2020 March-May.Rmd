@@ -93,4 +93,4 @@ Level 3 (Data Visualization): Create a visualization that compares mean scores o
 ## Level 4
 
 
-Level 4 (Inferential Statistics): Write code that recreates the tests for Hypothesis 1 (page 90).
+Level 4 (Inferential Statistics): Write code that recreates the tests for Hypothesis 1 - paired sample non parametric wilcoxan signed ranks test (page 90). https://cdn.ymaws.com/www.psichi.org/resource/resmgr/journal_2019/24_2_crambletalvarez.pdf

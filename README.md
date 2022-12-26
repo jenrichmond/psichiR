@@ -2,7 +2,9 @@
 
 This repo contains coding exercises from the [PsiChiR challenge](https://osf.io/pd64c/), kindly put together by Jordan Wagge. It is a great way to learn R via interactions with real data challenges. Each month, Jordan sets a data challenge with 4 levels; Level 1 usually involves some data cleaning/manipulation, Level 2 involves getting descriptive statistics, Level 3 involves some data visualisation, and Level 4 involves inferential statistics.
 
-Here is a list of skills learned in each challenge, in case you want to learn something in particular. 
+Here is a list of skills learned in each challenge, in case you want to learn something in particular. The exercises are grouped according to the datafile that they use (i.e. 2020 March-May.Rmd). 
+
+----
 
 March 2020
 - sort/arrange data
@@ -22,7 +24,7 @@ May 2020
 - plotting means
 - paired sample non parametric wilcoxon signed ranks test
 
-
+---- 
 Sept 2020
 - filter
 - frequencies
@@ -48,6 +50,8 @@ Dec 2020
 - means and standard deviation
 - line graph 
 - factorial ANOVA
+
+----
 
 Jan 2021
 - filter
@@ -113,7 +117,6 @@ Nov 2021
 - frequencies
 - histogram
 - anova
-
 
 Dec 2021
 - recode data

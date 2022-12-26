@@ -1,11 +1,26 @@
 ---
-title: "2021_Jul-Sept"
+title: "PsiChi 2021_Jul-Sept"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+
+# load packages
+```{r}
+library(tidyverse)
+library(here)
+library(janitor)
+```
+
+# read data 
+
+```{r}
+data <- read_csv(here("data", "singleUS.csv"))
+```
+
 
 Our July-Sept 2021 contest uses data from the Singles in America study.
 
@@ -29,15 +44,22 @@ In the Singles in America study, the participants were asked a series of questio
 
 Your tasks for the PsiChiR contest include:
 
+## Level 1
+
 Level 1: Create the total superficial judgment summary score (i.e., sum judge_pic, judge_outfit, judge_job, judge_born, judge_live, judge_car, judge_uni, judge_diet, judge_drink, judge_teeth, judge_posts, judge_grammar, judge_sparetime)
+
+## Level 2
 
 Level 2: Examine the total superficial judgment summary score with a histogram.
 
+## Level 3
+
 Level 3: Compute mean/median/mode/standard deviation for the total superficial judgment summary score.
+
+## Level 4
 
 Level 4: Compute means and standard deviation for superficial judgment summary by "onenight" group & do a t-test.
 
-In order to complete each level, you need to complete all levels before (so in order to complete level 4, you also need to do 1, 2, and 3 correctly).
 
 
 # AUGUST CHALLENGE
@@ -46,15 +68,22 @@ In the Singles in America study, the participants were asked a series of questio
 
 Your tasks for the PsiChiR contest include:
 
+## Level 1
+
 Create a total white lies summary score (i.e., sum whitelie_age, whitelie_divorce, whitelie_kids, whitelie_live, whitelie_job, whitelie_finance, whitelie_interest, whitelie_sexhistory, whitelie_datehistory).
+
+## Level 2
 
 Examine the total white lies score with a histogram.
 
+## Level 3
+
 Compute mean/median/mode/standard deviation for the total white lies summary score.
+
+## Level 4
 
 Compute means and standard deviation by group & do a t-test
 
-In order to complete each level, you need to complete all levels before (so in order to complete level 4, you also need to do 1, 2, and 3 correctly).
 
 
 # SEPTEMBER CHALLENGE
@@ -63,10 +92,18 @@ In the Singles in America study, the participants were asked a series of questio
 
 Your tasks for the PsiChiR contest include:
 
+## Level 1
+
 Create two frequency tables - one for the one night stand variable (onenight) and one for the friends w/ benefits variable (friendwb).
 
+
+## Level 2
 Create a grouped bar plot of the frequencies of the one night stand and friends w/ benefits variables (hint: you can use fill in the aesthetic a ggplot)
 
+## Level 3
+
 Create a frequency table with one night stand in columns and friends w/ benefits in rows
+
+## Level 4
 
 Calculate a chi square test of independence between the friends with benefits & one night stand variable.

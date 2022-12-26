@@ -1,5 +1,5 @@
 ---
-title: "2021_12"
+title: "PsiChi Oct-Jan 2022"
 output: html_document
 ---
 
@@ -7,13 +7,18 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r message=FALSE, warning=FALSE}
+# load packages
+```{r}
 library(tidyverse)
-library(janitor)
 library(here)
-library(foreign)
-library(correlation)
+library(janitor)
+library(haven)
+```
 
+# read data 
+
+```{r}
+data <- read_sav(here("data", "data_women_OSF_1.25.sav"))
 ```
 
 
@@ -23,82 +28,33 @@ https://osf.io/v4yhu/ contains information about the study.
 
 https://osf.io/9chb7/ contains an SPSS (.sav) file, that can be imported into R using the "foreign" package. Here are instructions on doing this.
 
-```{r}
-hookup <- read.spss(here("data", "Hookup.sav"), to.data.frame = TRUE)
-
-
-glimpse(hookup)
-```
 
 
 # October 2021
 
 Your tasks for the PsiChiR contest include:
 
-Level 1: Remove participants who say they are in a relationship (using variable “RelStatus”, 1 = Single, 2 = in a relationship)
+## Level 1 
 
-```{r}
-unique(hookup$RelStatus)
-
-single <- hookup %>%
-  filter(RelStatus == "Single")
-```
+Remove participants who say they are in a relationship (using variable “RelStatus”, 1 = Single, 2 = in a relationship)
 
 
-Level 2: Compute Mean and SD for the variable “Age”
+## Level 2
 
-```{r}
-
-single$Age <- as.numeric(single$Age)
-
-single %>%
-  mutate(Age = as.numeric(Age)) %>%
-  summarise(mean= mean(Age, na.rm = TRUE), sd = sd(Age, na.rm = TRUE))
+Compute Mean and SD for the variable “Age”
 
 
-```
-```{r}
-hookup %>%
-  tabyl(Gender)
 
-single %>%
-  tabyl(Religious)
-```
+## Level 3
+
+Create a scatterplot plotting “Age” against “HCTotal”
 
 
-Level 3: Create a scatterplot plotting “Age” against “HCTotal”
-
-```{r}
-single %>%
-  ggplot(aes(x = Age, y = HCTotal, colour = Religious)) +
-  geom_point() +
-  scale_y_continuous(limits = c(0,100)) 
-```
 
 
-Level 4: Correlate “Age” with “HCTotal” (the extent to which participants endorse hookup culture)
+## Level 4
 
-```{r}
-single$Age <- as.numeric(single$Age)
-
-cor.test(single$Age, single$HCTotal)
-
-single %>%
-  select(Age, HCTotal) %>%
-  correlation()
-
-single %>%
-  select(Age, AttendService, HCTotal) %>%
-  group_by(AttendService) %>%
-  correlation()
-```
-
-
-```{r}
-library(jmv)
-
-corrMatrix(single, vars = vars(HCTotal, Age, IOTotal))
-```
+Correlate “Age” with “HCTotal” (the extent to which participants endorse hookup culture)
 
 
 
@@ -108,61 +64,20 @@ corrMatrix(single, vars = vars(HCTotal, Age, IOTotal))
 
 Your tasks for the PsiChiR contest include:
 
+## Level 1
+
 Level 1: Remove participants who say they attend religious services
 
-```{r}
-
-noservice <- single %>%
-  filter(AttendService == "No")
-
-```
-
-
+## Level 2
 Level 2: Determine frequencies for “Year”
 
-```{r}
-noservice %>%
-  count(Year)
-
-noservice %>%
-  tabyl(Year)
-```
-
-
+## Level 3
 Level 3: Create a histogram for “HCTotal”
 
-```{r}
-noservice %>%
-  ggplot(aes(x = HCTotal)) +
-  geom_histogram(bins = 20)
-```
 
+## Level 4
 
 Level 4: Determine whether HCTotal differs across Year
-
-```{r}
-noservice %>%
-  ggplot(aes(x = HCTotal)) +
-  geom_histogram() +
-  facet_wrap(~Year)
-```
-
-
-```{r}
-noservice %>%
-  group_by(Year) %>%
-  summarise
-
-```
-
-
-```{r}
-
-
-ANOVA(formula = HCTotal ~ Year, data = noservice)
-
-```
-
 
 
 # December
@@ -170,18 +85,18 @@ ANOVA(formula = HCTotal ~ Year, data = noservice)
 
 Your tasks for the PsiChiR contest include:
 
-Level 1:
+## Level 1
 
 Using “Year,” put freshmen and sophomores into one group and juniors/seniors into another group
 
-Level 2:
+## Level 2
 
 Determine frequencies for this new variable – how many participants are in each new group
 
-Level 3:
+## Level 3
 
 Visually compare these two groups on means for HCTotal
 
-Level 4:
+## Level 4
 
 Statistically compare these two groups on means for HCTotal

@@ -6,6 +6,9 @@ Here is a list of skills learned in each challenge, in case you want to learn so
 
 ----
 
+Data re undergraduate psychology students inability to recognise pioneers 
+https://cdn.ymaws.com/www.psichi.org/resource/resmgr/journal_2019/24_2_crambletalvarez.pdf
+
 March 2020
 - sort/arrange data
 - mean and standard deviation
@@ -25,6 +28,10 @@ May 2020
 - paired sample non parametric wilcoxon signed ranks test
 
 ---- 
+
+PsiChi NICE:CROWD data re family dynamics in a cross cultural sample https://osf.io/qba7v/
+
+
 Sept 2020
 - filter
 - frequencies
@@ -52,6 +59,8 @@ Dec 2020
 - factorial ANOVA
 
 ----
+
+Article of model minority myth salience on white americans perception of black americans and their support for affimiration action from Lee & Outton (2020).
 
 Jan 2021
 - filter
@@ -85,6 +94,12 @@ May 2021
 
 ----
 
+Data from Singles in America Study 
+
+https://osf.io/grujm/ contains a .csv for the data.
+
+https://osf.io/ugb52/ contains a codebook.
+
 July 2021
 - compute new variable
 - plot histogram
@@ -104,6 +119,12 @@ Sept 2021
 - calculate chi square
 
 ----
+
+Data re the effect of differential susceptibility to social influence on endorsement of college hookup culture data from Goyette & Spencer (2021).
+
+https://osf.io/v4yhu/ contains information about the study.
+
+https://osf.io/9chb7/ contains an SPSS (.sav) file
 
 Oct 2021
 - filter
@@ -125,6 +146,8 @@ Dec 2021
 - t-test
 
 ----
+
+Data re need for cognition, womens implicit associations [Olshan, Vitiello, & Ratliff (2021)](https://cdn.ymaws.com/www.psichi.org/resource/resmgr/journal_2021/26_3_Olshan.pdf)
 
 Feb 2022
 - compute new variable

@@ -1,0 +1,161 @@
+---
+title: "psichi challenge template"
+output: html_document
+date: "2024-04-05"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Level 1 data processing
+Level 2 descriptive statistics
+Level 3 data visualisation
+Level 4 inferential statistics
+
+Data for this contest is from ...
+
+You can find the data for this study [here](...).
+
+
+To facilitate analyses, the ‘Runtime’ variable will need to be fixed so that ‘min’ is removed, and the column only contains numerical values.  
+
+To facilitate analyses, the ‘Genre’ variable will need to be edited so that each genre separated by a comma is listed in its own respective column. 
+
+## load packages
+
+```{r message=FALSE, warning=FALSE}
+library(tidyverse)
+library(here)
+library(janitor)
+
+```
+
+
+## read in the data
+
+```{r}
+
+imdb_top_1000 <- read_csv(here("data", "imdb_top_1000.csv")
+
+```
+
+
+
+#  Feb 2024
+
+## Level 1: 
+
+
+To facilitate analyses, the ‘Runtime’ variable will need to be fixed so that ‘min’ is removed, and the column only contains numerical values.  
+
+To facilitate analyses, the ‘Genre’ variable will need to be edited so that each genre separated by a comma is listed in its own respective column. 
+
+
+```{r}
+
+
+```
+ 
+
+
+## Level 2: 
+
+Provide the mean, standard deviation, median, and range of values for ‘IMDB_Rating’ 
+
+Provide the mean, standard deviation, median, and range of values for ‘Gross’ 
+
+```{r}
+
+```
+ 
+
+## Level 3: 
+
+Provide the mean values for IMDB rating by Released Year
+
+What is the mean ‘IMDB_rating’ of Romance movies?  
+
+ 
+```{r}
+
+
+```
+
+## Level 4: 
+
+Create a plot that shows the average ‘IMDB_rating’ for Romance movies over time. 
+
+Find the star who was lead in the most romance movies 
+
+```{r}
+
+
+
+```
+
+
+#  March 2024
+
+This month’s data comes from Kaggle.com, we’ll be looking at the 50 most popular songs on Spotify. 
+
+
+## read in the data
+
+```{r}
+top_50_2023 <- read_csv(here("data", "top_50_2023.csv")
+
+
+```
+
+
+## Level 1: 
+
+Let’s get familiar with our data. Create a table that shows how many times each genre is represented in the Top 50 most popular songs on Spotify. What is the most popular genre? 
+
+Which artist, if any, has the greatest number of Top 50 most popular songs on Spotify? 
+
+
+```{r}
+
+
+```
+
+
+## Level 2: 
+
+Provide the mean, standard deviation, median, and range of values for ‘danceability’ 
+
+Provide the mean, standard deviation, median, and range of values for ‘valence’ 
+
+Provide the mean, standard deviation, median, and range of values for ‘energy’ 
+```{r}
+
+```
+ 
+
+## Level 3: 
+
+Does the ‘tempo’ variable meet the assumption of normality?  
+
+Produce a visual that will show if the ‘loudness’ variable contains any outliers.  
+
+Is there a significant difference in the ratings of ‘danceability’ for explicit songs, compared to songs that are not explicit? Note all key statistics. 
+ 
+```{r}
+
+
+```
+
+## Level 4: 
+
+Create a regression model to figure out which of the following is the strongest predictor of popularity: danceability, valence, energy, loudness, acousticness. Instrumentalness, liveness, speechiness, or tempo. Please note all key statistics for each variable. 
+
+ 
+
+```{r}
+
+
+
+```
+

@@ -1,0 +1,82 @@
+---
+title: "psichi challenge template"
+output: html_document
+date: "2024-04-05"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Level 1 data processing
+Level 2 descriptive statistics
+Level 3 data visualisation
+Level 4 inferential statistics
+
+Data for this contest is from ...
+
+You can find the data for this study [here](...).
+
+## load packages
+
+```{r message=FALSE, warning=FALSE}
+library(tidyverse)
+library(here)
+library(janitor)
+
+```
+
+
+## read in the data
+
+```{r}
+
+
+
+```
+
+
+
+#  Month Year
+
+## Level 1: 
+
+Write script that will select participants who are 18+ years old
+
+
+```{r}
+
+
+```
+ 
+
+
+## Level 2: 
+
+
+
+```{r}
+
+```
+ 
+
+## Level 3: 
+
+
+
+ 
+```{r}
+
+
+```
+
+## Level 4: 
+
+
+
+```{r}
+
+
+
+```
+

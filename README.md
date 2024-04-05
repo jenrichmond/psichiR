@@ -280,6 +280,13 @@ Oct 2023 (Horror Movie data)
 - line graph
 - correlation 
 
+Dec 2023 (flight data)
+
+- calculate descriptive (min, max, mean, median)
+- plot scatter
+- analyse group differences
+- 
+
 ----------------
 
 

@@ -1,0 +1,89 @@
+---
+title: "psichi challenge template"
+output: html_document
+date: "2024-04-05"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Level 1 data processing
+Level 2 descriptive statistics
+Level 3 data visualisation
+Level 4 inferential statistics
+
+Data for this month’s contest uses IMBD’s Horror Movie Dataset available through Kaggle.com 
+
+
+You can find the data for this study [here](https://www.kaggle.com/datasets/PromptCloudHQ/imdb-horror-movie-dataset).
+
+## load packages
+
+```{r message=FALSE, warning=FALSE}
+library(tidyverse)
+library(here)
+library(janitor)
+
+```
+
+
+## read in the data
+
+```{r}
+
+
+
+```
+
+
+
+#  Oct 2023
+
+## Level 1: 
+
+• Write a script that will filter out movies that are missing a value in the ‘Budget’ column. 
+
+• Write a script that will filter out movies that are missing a value in the ‘RunTime’ column. 
+
+
+```{r}
+
+
+```
+ 
+
+
+## Level 2: 
+
+• Write a script that will provide the average, standard deviation, median, and range of the ‘RunTime’ variable. Note the values you got.  
+
+• Write a script that will provide the average, standard deviation, median, and range of the ‘Budget’ variable. Note the values you got.  
+
+• Write a script that will provide the average, standard deviation, median, and range of the ‘Review’ variable. Note the values you got from running the code.  
+
+```{r}
+
+```
+ 
+
+## Level 3: 
+
+• Create a graph that shows the ‘Budget’ for the movies in the dataset over time.  
+
+ 
+```{r}
+
+
+```
+
+## Level 4: 
+
+Test if there are any associations between the following variables: ‘Review’, ‘Budget’, and ‘RunTime’. Note the key statistics you got from running the code.
+
+```{r}
+
+
+
+```
+

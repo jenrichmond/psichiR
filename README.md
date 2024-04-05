@@ -285,8 +285,24 @@ Dec 2023 (flight data)
 - calculate descriptive (min, max, mean, median)
 - plot scatter
 - analyse group differences
-- 
+
 
 ----------------
 
+Feb 2024 (movie data)
 
+- data cleaning involving stringr
+- mean, standard deviation, median, and range
+- mean by group
+- plot over time
+
+March 2024 (spotify top 50 data)
+
+- table of counts
+- mean, standard deviation, median, and range
+- normality, outliers, t-test
+- regression
+
+
+
+------------

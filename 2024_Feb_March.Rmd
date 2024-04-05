@@ -36,7 +36,7 @@ library(janitor)
 
 ```{r}
 
-imdb_top_1000 <- read_csv(here("data", "imdb_top_1000.csv")
+imdb_top_1000 <- read_csv(here("data", "imdb_top_1000.csv"))
 
 ```
 
@@ -103,7 +103,7 @@ This month’s data comes from Kaggle.com, we’ll be looking at the 50 most pop
 ## read in the data
 
 ```{r}
-top_50_2023 <- read_csv(here("data", "top_50_2023.csv")
+top_50_2023 <- read_csv(here("data", "top_50_2023.csv"))
 
 
 ```

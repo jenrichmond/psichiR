@@ -1,0 +1,415 @@
+---
+title: "PsiChi Oct 2021-Jan 2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# load packages
+
+```{r}
+library(tidyverse)
+library(here)
+library(janitor)
+library(haven)
+library(naniar) # vis_miss() 
+library(ggpubr) # correlations on scatter plots
+library(report)
+
+```
+
+# read data 
+
+```{r}
+
+hookup <- read_sav(here("data", "Hookup Culture Final Data 2.9.21.sav"))
+ 
+```
+
+
+
+Our OCTOBER 2021 through JANUARY 2022 contests use Hookup data from Goyette & Spencer (2021).
+
+https://osf.io/v4yhu/ contains information about the study.
+
+https://osf.io/9chb7/ contains an SPSS (.sav) file, that can be imported into R using the "foreign" package. Here are instructions on doing this.
+
+
+
+# October 2021
+
+Your tasks for the PsiChiR contest include:
+
+## Level 1 
+
+Remove participants who say they are in a relationship (using variable “RelStatus”, 1 = Single, 2 = in a relationship)
+
+```{r}
+#ctrl shift M to get a pipe
+
+hookup %>% 
+  tabyl(RelStatus)
+
+## filter == is match and != is non match
+
+hookup_single <- hookup %>%
+  filter(RelStatus == 1)
+
+```
+
+
+
+## Level 2
+
+Compute Mean and SD for the variable “Age”
+
+```{r}
+age_HC <- hookup %>%
+  select(ID, Age, HCTotal)
+
+age_HC$Age <- as.numeric(age_HC$Age)
+
+
+age_HC %>%
+  summarise(mean_age = mean(Age, na.rm = TRUE), 
+            stdev_age = sd(Age, na.rm = TRUE), 
+            min_age = min(Age, na.rm = TRUE), 
+            max_age = max(Age, na.rm = TRUE))
+
+age_HC %>%
+  tabyl(Age)
+
+```
+
+
+
+
+## Level 3
+
+Create a scatterplot plotting “Age” against “HCTotal”
+
+### JENNY work out why age values disappeared! 
+
+```{r}
+age_HC <- age_HC %>%
+  na.omit() 
+
+# convert numeric to factor (so that we can get different colours by Age in the plot
+
+age_HC$Age <- as.factor(age_HC$Age)
+
+#check that the factor conversion worked
+glimpse(age_HC)
+
+
+age_HC %>%
+  ggplot(aes(x = Age, y = HCTotal, colour = Age)) + 
+  geom_point()
+
+
+```
+
+
+
+## Level 4
+
+Correlate “Age” with “HCTotal” (the extent to which participants endorse hookup culture)
+
+```{r}
+
+age_HC$Age <- as.numeric(age_HC$Age)
+
+cor.test(age_HC$Age, age_HC$HCTotal, method= "pearson")
+
+```
+
+```{r message=FALSE, warning=FALSE}
+
+ggscatter(age_HC, x = "Age", y = "HCTotal", 
+          add = "reg.line", conf.int = TRUE, 
+          cor.coef = TRUE, cor.method = "pearson",
+          xlab = "Age", ylab = "Hookup culture identification")
+```
+
+
+# November 2021
+
+
+Your tasks for the PsiChiR contest include:
+
+## Level 1
+
+Level 1: Remove participants who say they attend religious services
+
+NOTE: the reason in this case we need to tell R that we want it to filter out (!=) the "1" - in quotes, is that R thinks that the AttendService variable is characters. If we converted it to numeric using as.numeric before filtering, we wouldnt need the quotes. 
+
+
+```{r}
+
+religious <- hookup %>%
+  select(ID, Year, Religious, AttendService, HCTotal)
+
+religious %>%
+  tabyl(AttendService)
+
+
+no_religious <- religious %>%
+  filter(AttendService != "1")
+
+
+```
+
+
+## Level 2
+Level 2: Determine frequencies for “Year”
+
+```{r}
+count_output <- hookup %>%
+  count(hookup$Year)
+
+tabyl_output <- hookup %>%
+  tabyl(Year)
+
+# note other option is n() 
+```
+
+
+## Level 3
+Level 3: Create a histogram for “HCTotal”
+
+```{r}
+hookup %>%
+  ggplot(aes(x = HCTotal)) +
+  geom_histogram(binwidth = 5)
+```
+
+
+
+## Level 4
+
+Level 4: Determine whether HCTotal differs across Year
+
+```{r}
+
+HC_summary <- religious %>% 
+  group_by(Year) %>% 
+  summarise(meanHC = mean(HCTotal, na.rm = TRUE), 
+            stdevHC = sd(HCTotal, na.rm = TRUE), 
+            n = n(),
+            stderrHC = stdevHC/sqrt(n)) 
+
+# changing year to factor (to avoid label related error)
+
+HC_summary$Year <- as.factor(HC_summary$Year)
+
+#checking the factor worked
+
+glimpse(HC_summary)
+
+# plotting year by meanHC w error bars (note: to change the colour of columns, need to use fill rather than colour )
+
+HC_summary %>%
+  ggplot(aes(x = Year, y = meanHC, fill = Year)) +
+  geom_col() +
+  scale_y_continuous(limits = c(0,100), expand = c(0,0)) +
+  geom_errorbar(aes(ymin = meanHC-stderrHC, ymax = meanHC + stderrHC),
+                  size=.6,    # Thinner lines
+                    width=.3) +
+  theme_classic()
+
+ggsave("yearplot.png")
+
+
+# ~ tilde read as by or as a function of 
+# save your anova output as an object
+# run summary(nameofyourobject) to get F and p values
+# run report(nameofyourobject) to get results worthy intepretation/text
+
+hc_year <- aov(HCTotal ~ Year, data = religious)
+
+summary(hc_year)
+
+report(hc_year)
+
+```
+
+
+
+# December
+
+
+Your tasks for the PsiChiR contest include:
+
+## Level 1
+
+Using “Year,” put freshmen and sophomores into one group and juniors/seniors into another group
+
+```{r}
+
+# %in% read as in this list of things
+
+religious2 <- religious %>%
+  mutate(group = case_when(Year %in% c(1, 2) ~ "group1", 
+                             Year %in% c(3,4) ~ "group2"))
+         
+         
+```
+
+
+## Level 2
+
+Determine frequencies for this new variable – how many participants are in each new group
+
+```{r}
+
+religious2 %>%
+  count(group)
+
+religious2 %>%
+  tabyl(group)
+
+religious2 %>%
+  group_by(group) %>%
+ summarise(n = n())
+
+```
+
+
+## Level 3
+
+Visually compare these two groups on means for HCTotal
+
+```{r}
+# make a descriptive table, M, SD, n, stderr
+
+r2_summary <- religious2 %>%
+  group_by(group) %>%
+  summarise(meanHC = mean(HCTotal, na.rm = TRUE),
+            stdevHC = sd(HCTotal, na.rm = TRUE), 
+            n = n(), 
+            stderr = stdevHC/sqrt(n))
+
+# plot the mean HC for each group with error bars
+
+r2_summary %>%
+  ggplot(aes(x = group, y = meanHC, fill = group)) +
+  geom_col() +
+  geom_errorbar(aes(ymin = meanHC - stderr, ymax = meanHC + stderr),
+                  size=.6,    # Thinner lines
+                    width=.3) +
+  theme_classic() +
+  scale_y_continuous(expand = c(0,0), limits = c(0,80))
+
+
+
+
+```
+
+
+## Level 4
+
+Statistically compare these two groups on means for HCTotal
+
+```{r}
+
+ttest <- t.test(HCTotal ~ group, data = religious2, paired = FALSE)
+
+report(ttest)
+
+```
+
+
+# January 2022
+
+## Level 1:
+
+Sort the file by HCTotal scores, from low to high
+
+```{r}
+
+religious2_inc <- religious2 %>%
+  arrange(HCTotal, increasing = TRUE)
+
+religious2 %>%
+  arrange(desc(HCTotal))
+
+head(religious2_inc)
+
+
+```
+
+
+## Level 2:
+
+Compute mean HCTotal scores for each level of “Religion”
+
+```{r}
+
+religious2 %>%
+  group_by(Religious) %>%
+  summarise(meanHC = mean(HCTotal, na.rm = TRUE))
+
+```
+
+
+## Level 3:
+
+Create a line graph that shows mean HCTotal scores for two variables: Religion and AttendService
+
+```{r}
+
+
+plotdata <- religious2 %>%
+  group_by(Religious, AttendService) %>%
+  summarise(meanHC = mean(HCTotal, na.rm = TRUE),
+            stdevHC = sd(HCTotal, na.rm = TRUE), 
+            n = n(), 
+            stderr = stdevHC/sqrt(n))
+
+
+plotdata$Religious <- as.factor(plotdata$Religious)
+
+plotdata$AttendService <- as.factor(plotdata$AttendService)
+
+plotdata %>%
+  ggplot(aes(x = Religious, y = meanHC, colour = AttendService, group = AttendService)) +
+  geom_point(size = 4) +
+  geom_line() +
+  geom_errorbar(aes(ymin = meanHC - stderr, ymax = meanHC + stderr),
+                  size=.6,    # Thinner lines
+                    width=.3)
+
+
+```
+
+
+## Level 4:
+
+Determine whether there’s an interaction between Religion and AttendService on the variable HCTotal
+
+
+```{r}
+
+hc_rel_as <- aov(HCTotal ~ Religious + AttendService + Religious:AttendService, data = religious2)
+
+summary(hc_rel_as)
+
+report(hc_rel_as)
+
+# does the shortcut of including just the interaction work to show both main effects and interactoin?
+# yes you can tell R that you want both main effect and the interaction without spelling out everything, if you use factor1 * factor2 notation
+
+aov_test1 <- aov(HCTotal ~ Religious:AttendService, data = religious2)
+
+summary(aov_test1)
+
+aov_test2 <- aov(HCTotal ~ Religious*AttendService, data = religious2)
+
+
+summary(aov_test2)
+
+report(aov_test2)
+```
+

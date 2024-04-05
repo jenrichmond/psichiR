@@ -31,7 +31,6 @@ May 2020
 
 PsiChi NICE:CROWD data re family dynamics in a cross cultural sample https://osf.io/qba7v/
 
-
 Sept 2020
 - filter
 - frequencies
@@ -101,18 +100,21 @@ https://osf.io/grujm/ contains a .csv for the data.
 https://osf.io/ugb52/ contains a codebook.
 
 July 2021
+
 - compute new variable
 - plot histogram
 - compute descriptives
 - compute mean, do t-test
 
 August 2021
+
 - compute sumamry score
 - plot histogram
 - compute descriptives
 - compute mean, do t-test
 
 Sept 2021
+
 - create frequency tables
 - plot grouped bars
 - create frequenct table
@@ -127,6 +129,7 @@ https://osf.io/v4yhu/ contains information about the study.
 https://osf.io/9chb7/ contains an SPSS (.sav) file
 
 Oct 2021
+
 - filter
 - compute M and SD
 - scatterplot
@@ -140,6 +143,7 @@ Nov 2021
 - anova
 
 Dec 2021
+
 - recode data
 - frequencies
 - plot means
@@ -150,12 +154,15 @@ Dec 2021
 Data re need for cognition, womens implicit associations [Olshan, Vitiello, & Ratliff (2021)](https://cdn.ymaws.com/www.psichi.org/resource/resmgr/journal_2021/26_3_Olshan.pdf)
 
 Feb 2022
+
 - compute new variable
 - frequencies table
 - scatterplot
 - correlation
 
+
 March 2022
+
 - filter
 - descriptives
 - box plot
@@ -163,6 +170,7 @@ March 2022
 
 
 April 2022
+
 - recode data
 - descriptives
 - bar plot w error bars
@@ -177,5 +185,101 @@ May 2022
 
 ----
 
+November 2022 - November 2023 (ex Oct 2023)
+
+Nov 2022
+- filter
+- mutate + descriptives
+- bar plot
+- t-test
+
+Dec 2022
+
+- filter
+- mutate + descriptives
+- bar plot
+- t-test
+
+Jan 2023
+
+- filter
+- mutate + descriptives
+- bar plot
+- anova
+
+Feb 2023
+
+- filter
+- mutate + descriptives
+- bar plot
+- t-test
+
+Mar 2023
+
+- multi filter
+- mutate + descriptives
+- bar plot
+- t-test
+
+Apr 2023
+
+- multi filter
+- mutate + descriptives
+- scatter plot
+- correlation
+
+May 2023
+
+- filter
+- mutate + descriptives
+- histogram
+- correlation
+
+June 2023
+
+- filter + recode
+- mutate + descriptives
+- bar plot
+- correlation
+
+Jul 2023
+
+- filter
+- mutate + descriptives + recode
+- descriptives table 
+- regression
+
+
+Aug 2023
+
+- filter
+- mutate + reverse score + descriptives
+- bar plot
+- correlation
+
+Sept 2023
+
+- multi filter
+- mutate + descriptives
+- bar plot
+- correlation + t-test
+
+Nov 2023
+
+- filter mutate + 
+- descriptives
+- correlation matrix table
+- sig test
+
+------------------
+
+Oct 2023 (Horror Movie data)
+
+- multi filter
+- descriptives
+- line graph
+- correlation 
+
+----------------
 
 

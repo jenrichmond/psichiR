@@ -1,0 +1,756 @@
+---
+title: "Psichi Nov2022-Nov2023"
+output: html_document
+date: "2023-11-14"
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Level 1 data processing
+Level 2 descriptive statistics
+Level 3 data visualisation
+Level 4 inferential statistics
+
+Data for this contest is from Psi Chi's Network for International Collaborative Exchange (NICE). Specifically, this data is from the first project ever run by NICE - Understanding Family Dynamics in a Cross-Cultural Sample. 
+
+
+You can find the data for this study [here](https://osf.io/pwe94).
+
+## load packages
+
+```{r message=FALSE, warning=FALSE}
+library(tidyverse)
+library(here)
+library(janitor)
+
+```
+
+
+## read in the data
+
+```{r}
+
+data_nov <- read_csv(here("data", "nice_data", "2022_Nov_NICE.csv")) %>%
+  clean_names()
+
+```
+
+
+
+#  Nov 2022
+
+## Level 1: 
+
+Write script that will select participants who are 18+ years old
+
+
+```{r}
+
+
+```
+ 
+
+
+## Level 2: 
+
+ Create a variable called “SDQprosocial” that reflects prosocial behavior exhibited by participants. To create this variable, refer to the code book for individual items that should be included in the calculate. After creating the variable, find the mean and standard deviation for prosocial behavior exhibited by participants.
+
+```{r}
+
+```
+ 
+
+## Level 3: 
+
+Create a bar graph to display mean scores on the SDQ variable for men and women.
+
+
+ 
+```{r}
+
+
+```
+
+## Level 4: 
+
+Test whether men and women differ on this variable.
+
+```{r}
+
+
+
+```
+
+
+
+#  Dec 2022
+
+## read in the data
+
+```{r}
+
+data_dec <- read_csv(here("data", "nice_data", "2022_Dec_NICE.csv")) %>%
+  clean_names()
+
+```
+
+
+## Level 1: 
+
+Write script that will filter out participants who are older than 19
+
+```{r}
+
+
+```
+ 
+
+
+## Level 2: 
+
+Create a variable called ‘FACEenmesh’ that measures participants’ levels of enmeshment with their families. To create this variable, you will add together the following items from the FACES scale: FACES4, FACES10, FACES16, FACES22, FACES28, FACES34, FACES40
+
+Find the mean and standard deviation for enmeshment exhibited by participants as measured by the FACES
+
+ 
+```{r}
+
+```
+ 
+
+## Level 3: 
+Create a bar graph to display mean scores on the enmeshment variable for men and women.
+
+ 
+```{r}
+
+
+```
+
+## Level 4: 
+
+Test whether men and women differ on this variable.
+```{r}
+
+
+
+```
+
+
+#  Jan 2023
+
+## read in the data
+
+```{r}
+
+data_jan <- read_csv(here("data", "nice_data", "2023_Jan_NICE.csv")) %>%
+  clean_names()
+
+```
+
+
+## Level 1: 
+
+Write script that will filter out participants who do not have any siblings
+
+```{r}
+
+
+```
+ 
+
+
+## Level 2: 
+
+Create a variable called ‘FACEcomm’ that measures participants’ levels of communication with their families. To create this variable, you will add together the following items from the FACES scale: FACES43 + FACES44 + FACES45 + FACES46 + FACES47 + FACES48 + FACES49 + FACES50 + FACES51 + FACES52
+Find the mean and standard deviation for communication exhibited by participants as measured by the FACES
+
+
+ 
+```{r}
+
+```
+ 
+
+## Level 3: 
+
+ Create a bar graph to display mean scores on the communication variable for men and women.
+```{r}
+
+
+```
+
+## Level 4: 
+
+Test whether communication differs based on the number of siblings someone has.
+
+```{r}
+
+```
+
+#  Feb 2023
+
+## read in the data
+
+```{r}
+
+data_feb <- read_csv(here("data", "nice_data", "2023_Feb_NICE.csv")) %>%
+  clean_names()
+
+```
+
+## Level 1: 
+
+
+Write script that will filter out participants who are missing a value for the Age variable
+ 
+
+
+
+```{r}
+
+
+```
+ 
+
+
+## Level 2: 
+Create a variable called ‘FACErigid’ that measures rigidity among families. To create this variable, you will add together the following items from the FACES scale: FACES5 + FACES11 + FACES17 + FACES23 + FACES29 + FACES35 + FACES41
+ 
+Find the mean, standard deviation, median, and lower and upper quartiles for rigidityexhibited by participants as measured by the FACES
+ 
+ 
+```{r}
+
+```
+ 
+
+## Level 3: 
+Create a bar graph to display mean scores on the rigidity variable for men and women.
+ 
+
+ 
+```{r}
+
+
+```
+
+## Level 4: 
+
+Test if levels of rigidity differ by gender of participant. 
+
+```{r}
+
+
+
+```
+
+#  March 2023
+## read in the data
+
+```{r}
+
+data_mar <- read_csv(here("data", "nice_data", "2023_March_NICE.csv")) %>%
+  clean_names()
+
+```
+## Level 1: 
+
+
+Write script that will filter out participants who are missing a value AND who are older than 18for the Age variable
+ 
+
+
+
+```{r}
+
+
+```
+ 
+
+
+## Level 2: 
+Create a variable called ‘PsyContF’ that measures Psychological Control exhibited by the respondent’s Father. To create this variable, you will add together the following items from the DYADS scale: DyadF1+ DyadF2+ DyadF3+ DyadF4+ DyadF5+ DyadF6+ DyadF7
+ 
+Find the mean, standard deviation, median, and range for psychological control exhibited by respondent’s fathers as measured by the DYADS
+ 
+
+ 
+ 
+```{r}
+
+```
+ 
+
+## Level 3: 
+
+ Create a bar graph to display mean scores of the PsyContF variable reported by men and women.
+
+
+```{r}
+
+
+```
+
+## Level 4: 
+Test if levels of reported PsyContF differ by gender of participant.
+```{r}
+
+
+
+```
+
+#  April 2023
+## read in the data
+
+```{r}
+
+data_apr <- read_csv(here("data", "nice_data", "2023_Apr_NICE.csv")) %>%
+  clean_names()
+
+```
+## Level 1: 
+
+
+
+Write script that will filter out participants who are missing a value for the Age variable
+Write a script that will filter out participants who identify as men
+ 
+
+
+ 
+
+```{r}
+
+
+```
+ 
+
+
+## Level 2: 
+
+ Create a variable called ‘SDQhyper’ that measures x exhibited by the participant. To create this variable, you will add together the following items from the SDQ scale: SDQ2 + SDQ10 + SDQ15 + SDQ21 + SDQ25
+Create a variable called ‘SUtotal’ that measures all substance use exhibited by the participant. To create this variable, you will add together the following items from the YRBS scale: YRBS1 + YRBS2 + YRBS3 + YRBS4 + YRBS5 + YRBS6 + YRBS7 + YRBS8 + YRBS9 + YRBS10 + YRBS11 + YRBS12 + YRBS13 + YRBS14 + YRBS15 + YRBS16 + YRBS17
+ 
+Find the mean, standard deviation, median, and range for SDQhyper
+ 
+
+
+```{r}
+
+```
+ 
+
+## Level 3: 
+
+ Create a graph to display levels of hyperactivity as a function of age
+
+
+```{r}
+
+
+```
+
+## Level 4: 
+Test if there is an association between substance use and reported hyperactivity
+```{r}
+
+
+
+```
+
+
+#  May 2023
+## read in the data
+
+```{r}
+
+data_may <- read_csv(here("data", "nice_data", "2023_May_NICE.csv")) %>%
+  clean_names()
+
+```
+## Level 1: 
+
+Write a script that will filter out participants who are missing a value for the ‘Siblings’ variable.
+ 
+
+
+ 
+
+
+
+```{r}
+
+
+```
+ 
+
+
+## Level 2: 
+Create a variable called ‘FACEdisen’ that measure family disengagement by adding the following items together: FACES3, FACES9, FACES15, FACES21, FACES27, FACES33, FACES39
+
+Create a variable called ‘FACEenmesh’ that measures family enmeshment by adding the following items:  FACES4, FACES10, FACES16, FACES22, FACES28, FACES34, FACES40
+
+Create a variable called ‘FACEcomm’ that measures family communication by adding together the following items: FACES43, FACES44, FACES45, FACES46, FACES47, FACES48, FACES49, FACES50, FACES51, FACES52
+
+Find the mean, standard deviation, median, and range for ‘FACEdisen’, ‘FACEenmesh’, and ‘FACEcomm’. Report the average number of siblings reported by participants and indicate the range. 
+ 
+```{r}
+
+```
+ 
+
+## Level 3: 
+
+Create a histogram for “FACEcomm”
+
+
+```{r}
+
+
+```
+
+## Level 4: 
+Test if there is an association between the number of siblings reported by participants and family disengagement, enmeshment, and communication. 
+
+```{r}
+
+
+
+```
+
+
+#  June 2023
+## read in the data
+
+```{r}
+
+data_jun <- read_csv(here("data", "nice_data", "2023_Jun_NICE.csv")) %>%
+  clean_names()
+
+```
+## Level 1: 
+
+
+
+• Write script that will filter out participants who are missing a value for the Age variable
+• Write a script that will recode text entries in the SexOrient Column to Numbers
+o Heterosexual should be 1 
+o Non-heterosexual should be 2
+ 
+
+```{r}
+
+
+```
+ 
+
+## Level 2: 
+
+ • Create a variable called ‘FACEcomm’ that measures family communication. To create this variable, you will add together the following items from the FACES scale: FACES43 + FACES44 + FACES45 + FACES46 + FACES47 + FACES48 + FACES49 + FACES50 + FACES51 + FACES52
+ 
+• Create a variable called ‘FACEdisen’ that measures family disengagement. To create this variable, you will add together the following items from the FACES scale: FACES3 + FACES9 + FACES15 + FACES21 + FACES27 + FACES33 + FACES39 
+ 
+• Create a variable called ‘SUtotal’ that measures all substance use exhibited by the participant. To create this variable, you will add together the following items from the YRBS scale: YRBS1 + YRBS2 + YRBS3 + YRBS4 + YRBS5 + YRBS6 + YRBS7 + YRBS8 + YRBS9 + YRBS10 + YRBS11 + YRBS12 + YRBS13 + YRBS14 + YRBS15 + YRBS16 + YRBS17
+ 
+• Find the mean, standard deviation, median, and range for FACEcomm, FACEdisen, and SUtotal
+ 
+```{r}
+
+```
+ 
+
+## Level 3: 
+• Create a graph that will show levels of family communication reported by men and women
+ 
+```{r}
+
+
+```
+
+## Level 4: 
+ 
+
+• Test if there is an association between substance use and family communication and disengagement
+```{r}
+
+
+
+```
+
+
+#  July 2023
+## read in the data
+
+```{r}
+
+data_jul <- read_csv(here("data", "nice_data", "2023_Jul_NICE.csv")) %>%
+  clean_names()
+
+```
+## Level 1: 
+
+• Write a script that will filter out participants who don’t have any siblings
+
+
+
+```{r}
+
+
+```
+ 
+
+
+## Level 2: 
+
+ • Create a variable called SUmarij by adding YRBS8 + YRBS14
+• Find the average number of times participants have used marijuana.
+• Transform SUmarij into a binary variable where 0 = never used marijuana, and 1 = has used marijuana 
+
+
+```{r}
+
+```
+ 
+
+## Level 3: 
+
+ • Use cross-tabs to make a table that shows the counts of marijuana use (never used/has used) by gender
+ 
+
+```{r}
+
+
+```
+
+## Level 4: 
+• Test if there is an association between marijuana use and number of siblings someone has
+```{r}
+
+
+
+```
+
+
+#  August 2023
+## read in the data
+
+```{r}
+
+data_aug <- read_csv(here("data", "nice_data", "2023_Aug_NICE.csv")) %>%
+  clean_names()
+
+```
+## Level 1: 
+
+
+• Write a script that will filter out participants who are missing values for the age variable
+
+
+
+
+
+
+
+```{r}
+
+
+```
+ 
+
+
+## Level 2: 
+• Create a variable called FACEcomm (Family Communication) by adding together the following items FACES43 + FACES44 + FACES45 + FACES46 + FACES47 + FACES48 + FACES49 + FACES50 + FACES51 + FACES52
+o Note the average, standard deviation, and median values for the FACEcommvariable.
+• Create a variable called SSBQtotal (Total Safe Sex Behavior) through two steps
+o 1. Reverse Score SBQ2 INTO SBQ2R, SBQ7 INTO SBQ7R, SBQ8 INTO SBQ8R, SBQ14 INTO SBQ14R, SBQ16 INTO SBQ16R, SBQ17 INTO SBQ17R, SBQ22 INTO SBQ22R, SBQ24 INTO SBQ24R, SBQ25 INTO SBQ25R
+▪ 1 = Always 2 = Most of the time 3 = Sometimes 4 = Never
+o 2. Add the following items together: SBQ1 + SBQ2R + SBQ3 + SBQ4 + SBQ5 + SBQ6 + SBQ7R + SBQ8R + SBQ9 + SBQ10 + SBQ11 + SBQ12 + SBQ13 + SBQ14R + SBQ15 + SBQ16R + SBQ17R + SBQ18 + SBQ19 + SBQ20 + SBQ21 + SBQ22R + SBQ23 + SBQ24R + SBQ25R
+o Note the average, standard deviation, and median values for the SSBQtotalvariable
+ 
+```{r}
+
+```
+ 
+
+## Level 3: 
+
+ 
+• Create a bar graph that shows the mean levels of FACEcomm and SSBQtotal
+```{r}
+
+
+```
+
+
+
+## Level 4: 
+• Test if there is an association between total safe sex behavior (SSBQtotal) and family communication (FACEcomm).
+```{r}
+
+
+
+```
+
+
+#  Sept2023
+## read in the data
+
+```{r}
+
+data_sep <- read_csv(here("data", "nice_data", "2023_Sept_NICE.csv")) %>%
+  clean_names()
+
+```
+## Level 1: 
+
+• Write a script that will filter out participants who are missing values for the ‘Age’ variable
+• Write a script that will filter out participants who are missing values for the ‘Stateborn’ variable
+
+
+
+```{r}
+
+
+```
+ 
+
+
+## Level 2: 
+
+ • Create a variable called ‘CFPSCompas’ by summing together the following variables: FPS7, FPS8, FPS9, FPS10
+o CFPSCompas is a variable that measures Compassionate Reverence 
+• Create a variable called ‘FACEsatis’ by summing together the following variables: FACES53, FACES54, FACES55, FACES56, FACES57, FACES58, FACES59, FACES60, FACES61, FACES62
+o FACEsatis is a variable that measures Family Satisfaction
+
+
+```{r}
+
+```
+ 
+
+## Level 3: 
+• Create a graph that shows the mean levels of Family Satisfaction by gender 
+
+
+ 
+ 
+```{r}
+
+
+```
+
+## Level 4: 
+• Test if there is an association between Compassionate Reverence and Family Satisfaction. Note any key statistics.
+• Test if there are any gender differences in mean levels of Family Satisfaction. Note any key statistics.
+```{r}
+
+
+
+```
+
+
+
+
+#  Nov 2023
+## read in the data
+
+```{r}
+
+data_nov <- read_csv(here("data", "nice_data", "2023_Nov_NICE.csv")) %>%
+  clean_names()
+
+```
+## Level 1: 
+
+
+·   	Write a script that will filter out participants who are missing values for the ‘Hoursmom’ and ‘Hoursdad’ variables
+·   	Create a variable called ‘PsyContM’ by summing together the following variables: DyadM1+ DyadM2+ DyadM3+ DyadM4+ DyadM5+ DyadM6+ DyadM7
+·   	Create a variable called ‘PsyContF’ by summing together the following variables:  DyadF1+ DyadF2+ DyadF3+ DyadF4+ DyadF5+ DyadF6+ DyadF7
+
+
+
+```{r}
+
+
+```
+ 
+
+
+## Level 2: 
+
+ ·   	Calculate the mean, standard deviation, median, and range for PsyContM and PsyContF
+```{r}
+
+```
+ 
+
+## Level 3: 
+
+ Create a correlation matrix for Hoursmom, Hoursdad, PsyContM and PsyContM
+```{r}
+
+
+```
+
+## Level 4: 
+·   	Is there a significant correlation between PsyConF and Hoursdad? Note the R and P values.
+```{r}
+
+
+
+```
+
+
+#  Dec 2023
+## read in the data
+
+```{r}
+
+data_dec <- read_csv(here("data",  "Flight Data December 2023 Contest.csv")) %>%
+  clean_names()
+
+```
+## Level 1: 
+
+Provide descriptive statistics for the actual_flown_miles variable. Indicate the minimum number of miles flow, the maximum number of miles flow, the average number of miles flown, and the median number of miles flown.
+```{r}
+
+
+```
+ 
+
+
+## Level 2: 
+
+Describe the relationship between satisfaction (satisfaction_score) and delay time (arrival_delay_minutes). Note that for satisfaction_score a value of 1 is the lowest (dissatisfied) and 5 is the highest (satisfied). 
+
+Note that negative values in the arrival delay minutes mean the flight was early, while positive values indicate the flight was late. 
+```{r}
+
+```
+ 
+
+## Level 3: 
+
+Does satisfaction level (satisfaction_score) vary by the cabin (cabin_code) that they’re in? 
+ 
+```{r}
+
+
+```
+
+
+## Level 4: 
+
+Describe the relationship between loyalty program membership (loyalty_program_level) and satisfaction (satisfaction_score). Hint: you’ll have to do some recoding for folks who don’t belongto a program
+```{r}
+
+
+
+```
+
+

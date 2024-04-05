@@ -14,8 +14,16 @@ You can find the data for this study [here](https://osf.io/2qu67/?view_only=dcb2
 
 ## load packages
 
-```{r}
-
+```{r message=FALSE, warning=FALSE}
+library(tidyverse)
+library(haven)
+library(here)
+library(janitor)
+library(gt)
+library(ggpubr)
+library(naniar)
+library(ggeasy)
+library(report)
 ```
 
 
@@ -23,22 +31,50 @@ You can find the data for this study [here](https://osf.io/2qu67/?view_only=dcb2
 
 ```{r}
 
+data <- read_sav(here("data", "data_women_OSF_1.25.sav")) %>%
+  clean_names()
+
 ```
+
+
+
 
 #  FEBRUARY 2022
 
 ## Level 1: 
  Write script that will compute the “TotalCog” mean score from the 18 Need for Cognition variables (cog1 through cog18)
+ 
+```{r}
+
+
+```
+ 
 
 
 ## Level 2: 
  Create a frequencies table for the TotalCog variable
+ 
+```{r}
+
+```
+ 
 
 ## Level 3: 
- Create a scatterplot of the relation between the TotalCog and IAT scores
+ Create a scatterplot of the relation between the cogmean and **IAT scores**
+ 
+```{r my-figure, fig.cap = "Figure 1: The relation between IAT scores and need for cognition scores."}
+
+
+```
+ 
 
 ## Level 4: 
  Run correlation between the TotalCog and IAT scores. Calculate probability value and CIs.
+ 
+```{r}
+
+```
+
 
 
 #  MARCH 2022
@@ -46,20 +82,54 @@ You can find the data for this study [here](https://osf.io/2qu67/?view_only=dcb2
 
 ## Level 1: 
  Exclude participants with missing “STEMTotal” value
+ 
+```{r}
+
+
+```
+ 
 
 
 
 ## Level 2: 
  Calculate descriptive statistics for the IAT variable
+ 
+ - mean, median
+ - max, min
+  - stddev, stderr
+ 
+ 
+kableExtra package useful for table formatting, particularly easy to change digits to however many places you want (avoid need to add round() to every line of your summarise). 
+ 
+ 
+```{r}
 
 
-## Level 3: 
+
+
+```
+ 
+
+
+## Level 3:
  Create a box and dot plot of the IAT variable
+ 
+ 
+```{r}
+
+
+  
+```
 
 
 ## Level 4: 
  Calculate a one-sample t-test testing whether the sample's mean IAT score is different from zero
+ 
+```{r}
 
+
+
+```
 
 
 #  April 2022
@@ -67,23 +137,51 @@ You can find the data for this study [here](https://osf.io/2qu67/?view_only=dcb2
 
 ## Level 1: 
  Transform age variable into the following groups: 18 to 22; 23 to 30; 31 to 40; 41 to 50; over 50
+ 
+```{r}
+
+
+
+```
+ 
 
 ## Level 2: 
  Calculate descriptive statistics for the IAT variable separately for each group of the categorical age group you just created
+ 
+```{r}
 
-
+```
+ 
+ 
 ## Level 3: 
  Create a bar graph w/ error bars displaying the IAT scores based on the categorical age variable
  
+ https://jennyrichmond.netlify.app/blog/i-dont-have-to-google-series/2023-04-25-error-bars-on-plots/
+ 
+```{r}
+
+ 
+
+```
+ 
+
  
 ## Level 4: 
 
 Calculate a one-way ANOVA testing the difference in IAT scores based on the age groups
 
+```{r}
+
+
+```
+
+
 #  MAY 2022
 
 ## Level 1: 
  Filter out the participants who are NOT currently in STEM (select Demo2 = 1)
+ 
+
 
 ## Level 2: 
  Calculate descriptive statistics for the IAT and STEMtotal variables

@@ -1,5 +1,5 @@
 ---
-title: "PsiChi Oct-Jan 2022"
+title: "PsiChi Oct 2021-Jan 2022"
 output: html_document
 ---
 
@@ -8,18 +8,26 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # load packages
-```{r}
+
+```{r message=FALSE, warning=FALSE}
 library(tidyverse)
 library(here)
 library(janitor)
 library(haven)
+library(naniar) # vis_miss() 
+library(ggpubr) # correlations on scatter plots
+library(report)
+
 ```
 
 # read data 
 
 ```{r}
-data <- read_sav(here("data", "data_women_OSF_1.25.sav"))
+
+hookup <- read_sav(here("data", "Hookup Culture Final Data 2.9.21.sav"))
+ 
 ```
+
 
 
 Our OCTOBER 2021 through JANUARY 2022 contests use Hookup data from Goyette & Spencer (2021).
@@ -38,10 +46,21 @@ Your tasks for the PsiChiR contest include:
 
 Remove participants who say they are in a relationship (using variable “RelStatus”, 1 = Single, 2 = in a relationship)
 
+```{r}
+
+
+```
+
+
 
 ## Level 2
 
 Compute Mean and SD for the variable “Age”
+
+```{r}
+
+```
+
 
 
 
@@ -50,13 +69,27 @@ Compute Mean and SD for the variable “Age”
 Create a scatterplot plotting “Age” against “HCTotal”
 
 
+```{r}
+
+
+
+```
+
 
 
 ## Level 4
 
 Correlate “Age” with “HCTotal” (the extent to which participants endorse hookup culture)
 
+```{r}
 
+
+```
+
+```{r message=FALSE, warning=FALSE}
+
+
+```
 
 
 # November 2021
@@ -68,16 +101,44 @@ Your tasks for the PsiChiR contest include:
 
 Level 1: Remove participants who say they attend religious services
 
+NOTE: the reason in this case we need to tell R that we want it to filter out (!=) the "1" - in quotes, is that R thinks that the AttendService variable is characters. If we converted it to numeric using as.numeric before filtering, we wouldnt need the quotes. 
+
+
+```{r}
+
+
+
+
+```
+
+
 ## Level 2
 Level 2: Determine frequencies for “Year”
 
+```{r}
+
+```
+
+
 ## Level 3
 Level 3: Create a histogram for “HCTotal”
+
+```{r}
+
+```
+
 
 
 ## Level 4
 
 Level 4: Determine whether HCTotal differs across Year
+
+```{r}
+
+
+
+```
+
 
 
 # December
@@ -89,14 +150,92 @@ Your tasks for the PsiChiR contest include:
 
 Using “Year,” put freshmen and sophomores into one group and juniors/seniors into another group
 
+```{r}
+
+
+         
+         
+```
+
+
 ## Level 2
 
 Determine frequencies for this new variable – how many participants are in each new group
+
+```{r}
+
+
+
+```
+
 
 ## Level 3
 
 Visually compare these two groups on means for HCTotal
 
+```{r}
+
+
+
+
+```
+
+
 ## Level 4
 
 Statistically compare these two groups on means for HCTotal
+
+```{r}
+
+
+```
+
+
+# January 2022
+
+## Level 1:
+
+Sort the file by HCTotal scores, from low to high
+
+```{r}
+
+
+
+
+```
+
+
+## Level 2:
+
+Compute mean HCTotal scores for each level of “Religion”
+
+```{r}
+
+
+
+```
+
+
+## Level 3:
+
+Create a line graph that shows mean HCTotal scores for two variables: Religion and AttendService
+
+```{r}
+
+
+
+
+
+```
+
+
+## Level 4:
+
+Determine whether there’s an interaction between Religion and AttendService on the variable HCTotal
+
+
+```{r}
+
+
+```
+

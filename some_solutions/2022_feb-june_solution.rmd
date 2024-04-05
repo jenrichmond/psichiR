@@ -1,0 +1,341 @@
+---
+title: "PsiChi Feb-June2022"
+output: html_document
+date: '2022-05-09'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Our FEBRUARY 2022 through JUNE 2022 contests use data from [Olshan, Vitiello, & Ratliff (2021)](https://cdn.ymaws.com/www.psichi.org/resource/resmgr/journal_2021/26_3_Olshan.pdf)
+
+You can find the data for this study [here](https://osf.io/2qu67/?view_only=dcb2a654248447e6bc2530c0f708093f).
+
+## load packages
+
+```{r message=FALSE, warning=FALSE}
+library(tidyverse)
+library(haven)
+library(here)
+library(janitor)
+library(gt)
+library(ggpubr)
+library(naniar)
+library(ggeasy)
+library(report)
+```
+
+
+## read in the data
+
+```{r}
+
+data <- read_sav(here("data", "data_women_OSF_1.25.sav")) %>%
+  clean_names()
+
+```
+
+
+
+
+#  FEBRUARY 2022
+
+## Level 1: 
+ Write script that will compute the “TotalCog” mean score from the 18 Need for Cognition variables (cog1 through cog18)
+ 
+```{r}
+
+cog <- data %>%
+  select(session_id, starts_with("cog"), starts_with("iat"))
+
+# this code is base R
+
+cog_total <- cog %>%
+  mutate(cog_mean = rowMeans(x = select(.data = . , starts_with(match = "cog"))))
+
+### ***JENNY work out why rowwise gives bad numbers but the base version above and the longdata-group_by-summarise version below works***
+
+# PROBLEM: this code is tidyverse (but gives values that are rounded to the nearest .5 and DON'T resemble the previous)
+
+cog_total2 <- cog_total %>%
+rowwise() %>%
+mutate(cog_mean2 = mean(cog1:cog18))
+
+# SOLUTION 1: above code is problematic because of how I am tell R which columns to calculate the mean across
+# using c(list of each variable) works better 
+
+cog_total3 <- cog_total2 %>%
+  rowwise() %>%
+  mutate(cog_mean3 = mean(c(cog1, cog2, cog3_r, cog4_r, cog5_r, cog6, 
+                                cog7_r, cog8, cog9_r, cog10, cog11, cog12_r, 
+                                cog13, cog14, cog15, cog16_r, cog17, cog18), na.rm = TRUE)) %>%
+  ungroup()
+
+# SOLUTION 2: is there a way to use starts_with() to select those variables? ah yes! c_across
+
+cog_total4 <- cog_total3 %>%
+  rowwise() %>%
+  mutate(cog_mean4 = mean(c_across(cog1:cog18), na.rm = TRUE)) %>%
+  ungroup()
+
+# while we are here, that is a lot of decimal places, use round() to reduce to 2dp
+
+cog_total4 <- cog_total3 %>%
+  rowwise() %>%
+  mutate(cog_mean4 = round(mean(c_across(cog1:cog18), na.rm = TRUE), 2)) %>%
+  ungroup()
+
+
+# ALTERNATIVE: make the wide data into long format using pivot_longer, then use group_by %>% summarise
+cog_long <- cog %>%
+  pivot_longer(names_to = "item", values_to = "score", cog1:cog18)
+
+# once the data is in long format, we can use group_by and summarise to get a meancog score for each participant
+
+Total_Cog <- cog_long %>%
+  group_by(session_id) %>%
+  summarise(TotalCog = mean(score))
+  
+```
+ 
+
+
+## Level 2: 
+ Create a frequencies table for the TotalCog variable
+ 
+```{r}
+Total_Cog %>%
+  tabyl(TotalCog)
+
+Total_Cog %>%
+  ggplot(aes(x = TotalCog)) +
+  geom_histogram(binwidth = 1)
+
+freq <- Total_Cog %>%
+  mutate(category = case_when(TotalCog < 3 ~ "cat2",
+                              TotalCog > 8 ~ "cat8", 
+                              TotalCog >=3 & TotalCog < 4 ~ "cat3", 
+                              TotalCog >=4 & TotalCog < 5 ~ "cat4", 
+                              TotalCog >=5 & TotalCog < 6 ~ "cat5", 
+                              TotalCog >=6 & TotalCog < 7 ~ "cat6", 
+                              TotalCog >=7 & TotalCog < 8 ~ "cat7"))
+
+freq %>%
+  tabyl(category) %>%
+  gt()
+```
+ 
+
+## Level 3: 
+ Create a scatterplot of the relation between the cogmean and **IAT scores**
+ 
+```{r my-figure, fig.cap = "Figure 1: The relation between IAT scores and need for cognition scores."}
+
+cog_total %>%
+  ggplot(aes(x = cog_mean, y = iat, colour = iat)) +
+  geom_point() +
+  theme_classic() +
+  labs(title = "Figure 1", subtitle = "The relation between IAT scores and need for cognition scores", 
+       x = "Need for cognition score", 
+       y = "Implicit Association test score", 
+       caption = "sample size N = 282") +
+  theme(plot.title = element_text(face = "bold")) +
+  theme(plot.subtitle = element_text(face = "italic"))
+
+```
+ 
+
+## Level 4: 
+ Run correlation between the TotalCog and IAT scores. Calculate probability value and CIs.
+ 
+```{r}
+cor.test(cog_total$cog_mean, cog_total$iat, method= "pearson")
+
+ggscatter(cog_total, x = "cog_mean", y = "iat", 
+          add = "reg.line", conf.int = TRUE, 
+          cor.coef = TRUE, cor.method = "pearson",
+          xlab = "Need for cognition score", ylab = "Implicit Association score")
+```
+
+
+
+#  MARCH 2022
+
+
+## Level 1: 
+ Exclude participants with missing “STEMTotal” value
+ 
+```{r}
+
+stem <- data %>%
+  select(session_id, age, ste_mtotal, starts_with("iat"))
+
+stem %>%
+  vis_miss()
+
+stem %>%
+  tabyl(ste_mtotal)
+
+
+stem_nona <- stem %>%
+  filter(!is.na(ste_mtotal)) # keep the participants for whom stemtotal is NOT NA (note will delete the whole row if STEMtotal is NA)
+
+stem_nona %>%
+  vis_miss()
+```
+ 
+
+
+
+## Level 2: 
+ Calculate descriptive statistics for the IAT variable
+ 
+ - mean, median
+ - max, min
+  - stddev, stderr
+ 
+ 
+kableExtra package useful for table formatting, particularly easy to change digits to however many places you want (avoid need to add round() to every line of your summarise). 
+ 
+ 
+```{r}
+forkable <- stem_nona %>%
+  summarise(meanIAT = round(mean(iat), 3),
+            medianIAT = round(median(iat), 3),
+            maxIAT = round(max(iat), 3),
+            minIAT = round(min(iat), 3), 
+            stdevIAT = round(sd(iat), 3),
+            nIAT = n(), 
+            stderrIAT = round(stdevIAT/sqrt(nIAT),3) ) 
+
+
+kable(forkable, digits = 1) %>%
+  kable_styling()
+
+
+
+```
+ 
+
+
+## Level 3:
+ Create a box and dot plot of the IAT variable
+ 
+ 
+```{r}
+
+stem_nona <- stem_nona %>%
+  mutate(x = "x")
+
+
+# JENNY TO WORK OUT HOW TO MAKE BOX AND JITTER SIT NEXT TO EACH OTHER-- DODGE?
+
+stem_nona %>%
+  ggplot(aes(x = x, y = iat)) +
+  geom_boxplot(width = 0.5, fill = "pink", alpha = 0.5) +
+  geom_jitter(width = 0.1, alpha = 0.5, colour = "#9900CC") +
+  theme_classic()
+  
+```
+
+
+## Level 4: 
+ Calculate a one-sample t-test testing whether the sample's mean IAT score is different from zero
+ 
+```{r}
+
+t.test(iat ~ 1, data = stem_nona)
+
+iat_test <- t.test(stem_nona$iat, mu = 0)
+
+report(iat_test)
+
+
+```
+
+
+#  April 2022
+
+
+## Level 1: 
+ Transform age variable into the following groups: 18 to 22; 23 to 30; 31 to 40; 41 to 50; over 50
+ 
+```{r}
+
+stem_nona_age <- stem_nona %>%
+  mutate(age_category = case_when(age <=22 ~ "18to22", 
+                                  age >=23 & age <= 30 ~ "23to30", 
+                                   age >=31 & age <= 40 ~ "31to40", 
+                                   age >=41 & age <= 50 ~ "41to50", 
+                                  age> 50 ~ "50plus") )
+
+stem_nona_age %>%
+  tabyl(age_category)
+
+```
+ 
+
+## Level 2: 
+ Calculate descriptive statistics for the IAT variable separately for each group of the categorical age group you just created
+ 
+## Level 3: ***
+ Create a bar graph w/ error bars displaying the IAT scores based on the categorical age variable
+ 
+ https://jennyrichmond.netlify.app/blog/i-dont-have-to-google-series/2023-04-25-error-bars-on-plots/
+ 
+```{r}
+
+ stem_nona_age %>%
+  group_by(age_category) %>%
+  summarise(meanIAT = mean(iat), 
+            sdIAT = sd(iat), 
+            n = n(), 
+            stderr = sdIAT / sqrt(n)) %>%
+  ggplot(aes(x = age_category, y = meanIAT, fill = age_category)) +
+  geom_col() +
+  geom_errorbar(aes(ymin = meanIAT - stderr, ymax = meanIAT + stderr), 
+                size = 0.3, width = 0.5) +
+  labs(title = "this is the title", y = "Mean IAT score", 
+       x = "Age category", subtitle = "this is the subtitle", 
+       caption = "this is the caption") +
+  theme_classic() +
+  scale_y_continuous(limits = c(0,0.5), expand = c(0,0)) +
+  easy_remove_legend()
+
+ggsave("iat_age.png")
+
+```
+ 
+
+ 
+## Level 4: ******
+
+Calculate a one-way ANOVA testing the difference in IAT scores based on the age groups
+
+```{r}
+age_aov <- aov(iat ~ age_category + gender + age_category*gender, data = stem_nona_age)
+
+summary(age_aov)
+
+report(age_aov)
+
+```
+
+
+#  MAY 2022
+
+## Level 1: 
+ Filter out the participants who are NOT currently in STEM (select Demo2 = 1)
+ 
+
+
+## Level 2: 
+ Calculate descriptive statistics for the IAT and STEMtotal variables
+
+## Level 3: 
+ Create a scatterplot of the relation between the IAT and STEMtotal variables
+
+## Level 4: 
+ Run correlation between the IAT and STEMtotal scores. Calculate probability value and CIs.
+

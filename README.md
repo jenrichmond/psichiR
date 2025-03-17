@@ -203,6 +203,8 @@ Dec 2022
 
 ---
 
+# 2023 Jan-Dec
+
 Jan 2023
 
 - filter
@@ -291,6 +293,8 @@ Dec 2023 (flight data)
 
 ----------------
 
+# 2024 Feb-Dec
+
 Feb 2024 (movie data)
 
 - data cleaning involving stringr
@@ -359,7 +363,6 @@ Nov 2024 stress
 - correlation
 
 
-
 Dec 2024 shopping
 - filter
 - histogram
@@ -368,3 +371,13 @@ Dec 2024 shopping
 - correlation
 
 ------------
+
+# 2025 Jan - April 
+
+Jan 2025 cheese lovers 
+
+
+Feb 2025 Lee & Outten
+
+
+March 2025 Lee & Outten

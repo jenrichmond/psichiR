@@ -2,9 +2,11 @@
 
 This repo contains coding exercises from the [PsiChiR challenge](https://osf.io/pd64c/), kindly put together by Jordan Wagge. It is a great way to learn R via interactions with real data challenges. Each month, Jordan sets a data challenge with 4 levels; Level 1 usually involves some data cleaning/manipulation, Level 2 involves getting descriptive statistics, Level 3 involves some data visualisation, and Level 4 involves inferential statistics.
 
-Here is a list of skills learned in each challenge, in case you want to learn something in particular. The exercises are grouped according to the datafile that they use (i.e. 2020 March-May.Rmd). 
+Here is a list of skills learned in each challenge, in case you want to learn something in particular. You can use this repo by cloning a copy and coding on your own machine, or by accessing the exercises using this [Posit Cloud workspace](https://posit.cloud/content/5737294)
 
 ----
+
+# 2020 March-Dec 
 
 Data re undergraduate psychology students inability to recognise pioneers 
 https://cdn.ymaws.com/www.psichi.org/resource/resmgr/journal_2019/24_2_crambletalvarez.pdf
@@ -27,7 +29,6 @@ May 2020
 - plotting means
 - paired sample non parametric wilcoxon signed ranks test
 
----- 
 
 PsiChi NICE:CROWD data re family dynamics in a cross cultural sample https://osf.io/qba7v/
 
@@ -58,6 +59,8 @@ Dec 2020
 - factorial ANOVA
 
 ----
+
+# 2021 Jan-Dec
 
 Article of model minority myth salience on white americans perception of black americans and their support for affimiration action from Lee & Outton (2020).
 
@@ -91,7 +94,6 @@ May 2021
 - correlation
 - scatterplot
 
-----
 
 Data from Singles in America Study 
 
@@ -120,7 +122,6 @@ Sept 2021
 - create frequenct table
 - calculate chi square
 
-----
 
 Data re the effect of differential susceptibility to social influence on endorsement of college hookup culture data from Goyette & Spencer (2021).
 
@@ -150,6 +151,8 @@ Dec 2021
 - t-test
 
 ----
+
+# 2022 Feb-Dec
 
 Data re need for cognition, womens implicit associations [Olshan, Vitiello, & Ratliff (2021)](https://cdn.ymaws.com/www.psichi.org/resource/resmgr/journal_2021/26_3_Olshan.pdf)
 
@@ -183,9 +186,6 @@ May 2022
 - scatterplot
 - correlation
 
-----
-
-November 2022 - November 2023 (ex Oct 2023)
 
 Nov 2022
 - filter
@@ -199,6 +199,9 @@ Dec 2022
 - mutate + descriptives
 - bar plot
 - t-test
+
+
+---
 
 Jan 2023
 
@@ -264,21 +267,20 @@ Sept 2023
 - bar plot
 - correlation + t-test
 
-Nov 2023
-
-- filter mutate + 
-- descriptives
-- correlation matrix table
-- sig test
-
-------------------
-
 Oct 2023 (Horror Movie data)
 
 - multi filter
 - descriptives
 - line graph
 - correlation 
+
+Nov 2023 NICE data
+
+- filter mutate + 
+- descriptives
+- correlation matrix table
+- sig test
+
 
 Dec 2023 (flight data)
 
@@ -304,5 +306,65 @@ March 2024 (spotify top 50 data)
 - regression
 
 
+April 2024
+
+
+May 2024 NICE data
+- filter
+- mutate
+- histogram
+- regression
+
+
+June 2024 pokemon
+
+- count frequencies
+- compute descriptives
+- assess outliers
+- correlation
+
+
+July 2024 olympics
+
+- count frequecnies
+- table
+- visualisations
+
+Aug 2024 NICE data
+- filter
+- compute new variable, get deisriptives
+- boxplot
+- t-test
+
+
+Sept 2024 coffee
+- table frequencies
+- calculate mean
+- plot condition differences
+- ANOVA
+
+
+Oct 2024 horror
+
+- filter
+- separate
+- descriptives
+- plot over time
+- correlation
+
+Nov 2024 stress
+- histogram
+- outliers
+- scatterplot
+- correlation
+
+
+
+Dec 2024 shopping
+- filter
+- histogram
+- descriptives
+- summary table
+- correlation
 
 ------------

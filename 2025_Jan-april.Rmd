@@ -1,0 +1,229 @@
+---
+title: "2025_jan-april"
+output: html_document
+date: "2025-03-17"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Level 1 data processing
+Level 2 descriptive statistics
+Level 3 data visualisation
+Level 4 inferential statistics
+
+Data for this contest is from ...
+
+You can find the data for this study [here](...).
+
+## load packages
+
+```{r message=FALSE, warning=FALSE}
+library(tidyverse)
+library(here)
+library(janitor)
+
+```
+
+
+## read in the data
+
+```{r}
+
+
+
+```
+
+#  Jan 2025
+
+## Level 1: 
+
+
+January is National Cheese Lover’s Day
+
+Level 1. Remove any rows where ‘company,’ ‘product_name,’ and/or ‘rating’ are blank.
+```{r}
+
+
+```
+ 
+
+## Level 2: 
+Level 2. Make one table that shows the counts of each category within ‘rating,’ and then make a second table showing counts for each ‘country.’ 
+
+```{r}
+
+```
+ 
+
+## Level 3: 
+
+Level 3. First, make a table showing how many of each medal type (rating) each cheese (Category_Corrected). Which cheese has the most “Super Golds?” Next, modify the table and indicate which country produced the most “Super Gold” cheeses. 
+```{r}
+
+
+```
+
+## Level 4: 
+Level 4. Generate a map that shows which countries have won super gold medals.
+ 
+
+```{r}
+
+
+
+```
+
+
+
+#  Feb 2025 lee Outten
+
+## Level 1: 
+
+Level 1: Remove participants outside of the United States AND participants who are not identified as "white" (white participants are coded as "1" for the variable "Race").
+
+
+
+
+
+```{r}
+
+
+```
+ 
+
+## Level 2: 
+
+Level 2: For the remaining participants, calculate the percentage of participants who fell into each income category (1 through 5).
+
+
+```{r}
+
+```
+ 
+
+## Level 3: 
+
+
+ Level 3: Create a graph (such as a bar graph) that displays the M and SD for "General Support for Affirmative Action" (variable = "AA") across income groups.
+
+
+```{r}
+
+
+```
+
+## Level 4: 
+
+Level 4: Test whether "General Support for Affirmative Action" (variable = "AA") differs across income group.
+
+
+
+
+#  Mar 2025
+
+## Level 1: 
+
+
+Level 1: Sort the data by GPA from low to high.
+
+```{r}
+
+
+```
+ 
+
+## Level 2: 
+
+Level 2: Produce the means and standard deviations for the following variables:
+
+GPA
+
+Male_score (recognition for male psychologists like Sigmund Freud; higher scores = more recognition)
+
+Female_score (recognition for psychologist women)
+
+POC_score (recognition for psychologists of color)
+
+White_score (recognition for white psychologists)
+
+```{r}
+
+```
+ 
+
+## Level 3: 
+
+
+Level 3: Create a graph to compare the mean scores for recognition of women and for recognition of men.
+
+
+ 
+```{r}
+
+
+```
+
+## Level 4: 
+
+Level 4: Run an independent-samples t-test comparing the mean recognition of women (Female_score) variable across male and female participants (Gender).
+
+Level 4 Bonus: Run an independent-samples t-test comparing the mean recognition of women (Female_score) variable between people who have completed a history of psychology course and people who have not taken a history of psychology course (Taken_history).
+```{r}
+
+
+
+```
+
+
+
+#  Month Year
+
+## Level 1: 
+
+
+
+```{r}
+
+
+```
+ 
+
+## Level 2: 
+
+
+```{r}
+
+```
+ 
+
+## Level 3: 
+
+
+ 
+```{r}
+
+
+```
+
+## Level 4: 
+
+
+```{r}
+
+
+
+```
+
+
+
+
+
+
+
+```{r}
+
+
+
+```

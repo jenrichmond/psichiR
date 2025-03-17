@@ -192,3 +192,112 @@ Calculate a one-way ANOVA testing the difference in IAT scores based on the age 
 ## Level 4: 
  Run correlation between the IAT and STEMtotal scores. Calculate probability value and CIs.
 
+
+## read in the data
+
+
+```{r message=FALSE, warning=FALSE}
+
+data_nov <- read_csv(here("data", "nice_data", "2022_Nov_NICE.csv")) %>%
+  clean_names()
+
+```
+
+
+```{r}
+
+
+
+
+```
+
+
+
+#  Nov 2022
+
+## Level 1: 
+
+Write script that will select participants who are 18+ years old
+
+
+
+```{r}
+
+
+```
+ 
+
+
+## Level 2: 
+
+Create a variable called “SDQprosocial” that reflects prosocial behavior exhibited by participants. This is probably asking us to calculate mean scores across the 5 prosocial variable. 
+
+SDQ = Strengths and Difficulties Questionnaire
+1) emotional symptoms (5 items)
+2) conduct problems (5 items)	
+3) hyperactivity/inattention (5 items)	
+4) peer relationship problems (5 items)	
+5) prosocial behaviour (5 items)
+
+Prosocial: 1consid, 4shares, 9pcaring, 17kind, 20helpout)
+
+
+
+
+
+
+## Level 3: 
+
+Create a bar graph to display mean scores on the SDQ variable for men and women.
+
+
+
+
+
+## Level 4: 
+
+Test whether men and women differ on this variable.
+
+
+
+
+#  Dec 2022
+
+## read in the data
+
+Here I am reading teh dec data in using read-csv and here. Add clean_names to make the variables name all lower case and _ in the gaps. 
+
+```{r message=FALSE, warning=FALSE}
+
+data_dec <- read_csv(here("data", "nice_data", "2022_Dec_NICE.csv")) %>%
+  clean_names()
+
+```
+
+
+## Level 1: 
+
+Write script that will filter out participants who are older than 19
+
+
+
+## Level 2: 
+
+Create a variable called ‘FACEenmesh’ that measures participants’ levels of enmeshment with their families. To create this variable, you will add together the following items from the FACES scale: FACES4, FACES10, FACES16, FACES22, FACES28, FACES34, FACES40
+
+Find the mean and standard deviation for enmeshment exhibited by participants as measured by the FACES
+
+
+
+## Level 3: 
+Create a bar graph to display mean scores on the enmeshment variable for men and women.
+
+1= male
+2= female
+
+ 
+
+## Level 4: 
+
+Test whether men and women differ on this variable.
+

@@ -1,0 +1,440 @@
+---
+title: "PsiChi: Jan-May 2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+# load packages
+```{r}
+library(tidyverse)
+library(here)
+library(janitor)
+```
+
+# Lee Outton data
+
+## read data 
+
+```{r}
+data <- read_csv(here("data", "LeeOutton20.csv"))
+```
+
+Our January-May 2021 contest uses data from Lee & Outton (2020).
+
+https://osf.io/24653/wiki/home/ (links to paper and .csv)
+
+
+# JANUARY CHALLENGE
+
+Your tasks for the PsiChiR contest include:
+
+## Level 1
+
+Level 1: Remove participants outside of the United States.
+
+## Level 2
+
+Level 2: For the remaining participants, find the mean and standard deviation for "Age."
+
+## Level 3
+
+Level 3: Create a histogram for "Age"
+
+## Level 4
+
+Level 4: Test whether "Age" differed significantly across experimental conditions ("Manipulation").
+
+
+
+# FEB CHALLENGE
+
+
+Your tasks for the PsiChiR contest include:
+
+## Level 1
+
+Level 1: Remove participants outside of the United States AND participants who are not identified as "white" (white participants are coded as "1" for the variable "Race").
+
+## Level 2
+
+Level 2: For the remaining participants, calculate the percentage of participants who fell into each income category (1 through 5).
+
+
+## Level 3
+Level 3: Create a graph (such as a bar graph) that displays the M and SD for "General Support for Affirmative Action" (variable = "AA") across income groups.
+
+## Level 4
+
+Level 4: Test whether "General Support for Affirmative Action" (variable = "AA") differs across income group.
+
+
+
+
+# MARCH CHALLENGE
+
+Your tasks for the PsiChiR contest include:
+
+## Level 1
+
+Level 1: Make a general support for AA policies score by finding the average of the AA1, AA2, AA3, AA4_r, AA5, AA7, and AA8_r variables
+
+## Level 2
+
+Level 2: Calculate descriptives statistics for the general support for AA policies scores based on the manipulation variable.
+
+## Level 3
+
+Level 3: Test the difference in general support for AA policies between the different manipulation groups.
+
+## Level 4
+
+Level 4: Create a graph showing the relationship between general support for AA policies and the manipulation groups.
+
+
+
+
+# APRIL CHALLENGE
+
+Your tasks for the PsiChiR contest include:
+
+## Level 1
+
+Level 1: Compute a mean score for Affirmative Action support for Black Americans by adding the following variables and dividing by 8: AA_Black1, AABlack2, AA_Black3, AA_Black4, AA_Black5, AA_Black6_r, AA_Black7_r, AA_Black8.
+
+## Level 2
+
+Level 2: Calculate the Means and Standard Deviations for this computed variable for each "Manipulation" condition.
+
+## Level 3
+
+Level 3: Conduct a t-test to determine if means on this new variable differ across "Manipulation" condition.
+
+## Level 4
+
+Level 4: Create a bar graph to display the means and standard deviations for each condition.
+
+
+
+# MAY CHALLENGE
+
+Your tasks for the PsiChiR contest include:
+
+## Level 1
+
+Level 1: Compute a mean score for perceived status of Black Americans score by by adding the following variables and dividing by 3: Perceived_Status1, Perceived_Status2, Perceived_Status3.
+
+## Level 2
+
+Level 2: Calculate the Mean and Standard Deviation for this computed variable.
+
+
+## Level 3
+Level 3: Calculate a correlation to determine if this new variable is associated with income.
+
+## Level 4
+
+Level 4: Create a scatterplot to display the association between perceived status and income.
+# Singles in America data
+
+## read data 
+
+```{r}
+data <- read_csv(here("data", "singleUS.csv"))
+```
+
+
+Our July-Sept 2021 contest uses data from the Singles in America study.
+
+https://osf.io/grujm/ contains a .csv for the data.
+
+https://osf.io/ugb52/ contains a codebook.
+
+
+Single in America is an annual study on the attitudes and behaviors of single people in America. The study is sponsored by the online dating company Match and is in collaboration with Dr. Helen Fisher and Dr. Justin Garcia at the Kinsey Institute. Every year they ask 5,000 singles about all kinds of things, like what they are looking for in a partner, their dating preferences, their past relationships, and their interests.
+
+The researchers used a stratified random sampling technique to select the participants from a list of people who signed up to be considered in research opportunities. This means that the researchers purposefully selected particular demographic categories, or strata. Then they randomly selected individuals within each of the categories, proportionate to their assumed membership in the population. The proportions they used were based on the most recent US Census.
+
+All participants completed the survey over the internet. Participants were required to authenticate their identity before starting the survey. If there was evidence that participants used a response set to answer the questions (like if they answered the first option for every question) or if the survey was completed too quickly, their data was not included in the study.
+
+We will use a randomly selected subset of the 2016 singles in America dataset several times throughout this guide. Note that this data is a subsample of a real dataset collected through the Kinsey Institute and match.com.
+
+# JULY CHALLENGE
+
+In the Singles in America study, the participants were asked a series of questions about judging others based on different things, like their social media pictures.
+
+Your tasks for the PsiChiR contest include:
+
+## Level 1
+
+Level 1: Create the total superficial judgment summary score (i.e., sum judge_pic, judge_outfit, judge_job, judge_born, judge_live, judge_car, judge_uni, judge_diet, judge_drink, judge_teeth, judge_posts, judge_grammar, judge_sparetime)
+
+## Level 2
+
+Level 2: Examine the total superficial judgment summary score with a histogram.
+
+## Level 3
+
+Level 3: Compute mean/median/mode/standard deviation for the total superficial judgment summary score.
+
+## Level 4
+
+Level 4: Compute means and standard deviation for superficial judgment summary by "onenight" group & do a t-test.
+
+
+
+# AUGUST CHALLENGE
+
+In the Singles in America study, the participants were asked a series of questions about judging others based on different things, like their social media pictures.
+
+Your tasks for the PsiChiR contest include:
+
+## Level 1
+
+Create a total white lies summary score (i.e., sum whitelie_age, whitelie_divorce, whitelie_kids, whitelie_live, whitelie_job, whitelie_finance, whitelie_interest, whitelie_sexhistory, whitelie_datehistory).
+
+## Level 2
+
+Examine the total white lies score with a histogram.
+
+## Level 3
+
+Compute mean/median/mode/standard deviation for the total white lies summary score.
+
+## Level 4
+
+Compute means and standard deviation by group & do a t-test
+
+
+
+# SEPTEMBER CHALLENGE
+
+In the Singles in America study, the participants were asked a series of questions about judging others based on different things, like their social media pictures.
+
+Your tasks for the PsiChiR contest include:
+
+## Level 1
+
+Create two frequency tables - one for the one night stand variable (onenight) and one for the friends w/ benefits variable (friendwb).
+
+
+## Level 2
+Create a grouped bar plot of the frequencies of the one night stand and friends w/ benefits variables (hint: you can use fill in the aesthetic a ggplot)
+
+## Level 3
+
+Create a frequency table with one night stand in columns and friends w/ benefits in rows
+
+## Level 4
+
+Calculate a chi square test of independence between the friends with benefits & one night stand variable.
+
+
+# Hook up data
+
+## read data 
+
+```{r}
+
+hookup <- read_sav(here("data", "Hookup Culture Final Data 2.9.21.sav"))
+ 
+```
+
+
+
+Our OCTOBER 2021 through JANUARY 2022 contests use Hookup data from Goyette & Spencer (2021).
+
+https://osf.io/v4yhu/ contains information about the study.
+
+https://osf.io/9chb7/ contains an SPSS (.sav) file, that can be imported into R using the "foreign" package. Here are instructions on doing this.
+
+
+
+# OCTOBER 2021
+
+Your tasks for the PsiChiR contest include:
+
+## Level 1 
+
+Remove participants who say they are in a relationship (using variable “RelStatus”, 1 = Single, 2 = in a relationship)
+
+```{r}
+
+
+```
+
+
+
+## Level 2
+
+Compute Mean and SD for the variable “Age”
+
+```{r}
+
+```
+
+
+
+
+## Level 3
+
+Create a scatterplot plotting “Age” against “HCTotal”
+
+
+```{r}
+
+
+
+```
+
+
+
+## Level 4
+
+Correlate “Age” with “HCTotal” (the extent to which participants endorse hookup culture)
+
+```{r}
+
+
+```
+
+```{r message=FALSE, warning=FALSE}
+
+
+```
+
+
+# NOVEMBER 2021
+
+
+Your tasks for the PsiChiR contest include:
+
+## Level 1
+
+Level 1: Remove participants who say they attend religious services
+
+NOTE: the reason in this case we need to tell R that we want it to filter out (!=) the "1" - in quotes, is that R thinks that the AttendService variable is characters. If we converted it to numeric using as.numeric before filtering, we wouldnt need the quotes. 
+
+
+```{r}
+
+
+```
+
+
+## Level 2
+Level 2: Determine frequencies for “Year”
+
+```{r}
+
+```
+
+
+## Level 3
+Level 3: Create a histogram for “HCTotal”
+
+```{r}
+
+```
+
+# DECEMBER 2021
+
+
+Your tasks for the PsiChiR contest include:
+
+## Level 1
+
+Using “Year,” put freshmen and sophomores into one group and juniors/seniors into another group
+
+```{r}
+
+
+         
+         
+```
+
+
+## Level 2
+
+Determine frequencies for this new variable – how many participants are in each new group
+
+```{r}
+
+
+
+```
+
+
+## Level 3
+
+Visually compare these two groups on means for HCTotal
+
+```{r}
+
+
+
+
+```
+
+
+## Level 4
+
+Statistically compare these two groups on means for HCTotal
+
+```{r}
+
+
+```
+
+
+# JANUARY 2022
+
+## Level 1:
+
+Sort the file by HCTotal scores, from low to high
+
+```{r}
+
+
+
+
+```
+
+
+## Level 2:
+
+Compute mean HCTotal scores for each level of “Religion”
+
+```{r}
+
+
+
+```
+
+
+## Level 3:
+
+Create a line graph that shows mean HCTotal scores for two variables: Religion and AttendService
+
+```{r}
+
+
+
+
+
+```
+
+
+## Level 4:
+
+Determine whether there’s an interaction between Religion and AttendService on the variable HCTotal
+
+
+```{r}
+
+
+```

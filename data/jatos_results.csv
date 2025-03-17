@@ -1,0 +1,240 @@
+"rt","stimulus","key_press","trial_type","trial_index","time_elapsed","subject","sona_id","button_pressed","responses","success","view_history","question_order","score","timepoint","SE_reward_offered","indifference_point","effort_level"
+"1792.0000000000005","Welcome to the experiment. Press any key to begin.","77","html-keyboard-response","0","1799","6s7kfv","","","","","","","","","","",""
+"1951","<h1 style=""text-align:center;"">UNSW Sydney</h1>    <p style=""text-align:left;line-height:190%;margin:16px 80px;""><br>Thank you for applying to participate in this study. <b>""You Choose!""</b> is a psychological study investigating the relationship between decision-making and people&apos;s approach to effort. To participate you will need to be using a computer (with keyboard and mouse/trackpad) and be in a quiet, distraction free space. It involves the following steps:</p><ol style=""text-align:left;line-height:190%;margin:16px 80px;""><li>  We ask for your informed consent. Please read the participant information statement and consent form closely on the next page. <br></li><li>  You will then be asked some questions about yourself.<br></li><li>  In the experiment you will engage in a series of choices between rewards that either do or do not require effort.<br></li><li>  Before starting the experiment, a detailed explanation of how to complete it will be given. <br></li><li>  In total it should take about 30 minutes to complete.<br></li></ol><p style=""text-align:left;line-height:190%;margin:16px 80px;"">Please <u>do not</u> use the ""back""    button on your browser or close the window until you reach the end of the experiment.   This is very likely to break the experiment and may make it difficult for you to receive your SONA credit.   However, if something does go wrong, please contact us! DO NOT PARTICIPATE TWICE! When you are ready to begin, click on   the ""START"" button below.<br><br></p>","","html-button-response","1","3763","6s7kfv","","0","","","","","","","","",""
+"1676","<p style=""text-align:right;font-size:90%;margin:16px 80px;margin-top:30px;""></p>			<p style=""text-align:center;""><b>THE UNIVERSITY OF NEW SOUTH WALES<br>			PARTICIPANT INFORMATION STATEMENT</b><br><br><b>You Choose!</b><br></p>			<p style=""text-align:left;font-size:90%;margin:16px 80px;""><b>What is the research study about?</b><br>You are invited to take part in this research study. The research study aims to investigate the relationship between decision-making and people&apos;s approach to effort, as well as their real-world relevance. You have been invited to participate because you are studying PSYC1A or PSYC1B at UNSW.<br><br>       <b>Who is conducting this research?</b><br>			The study is being carried out by the following researchers: Lara Guerreiro and Steven B. Most, UNSW Sydney School of Psychology<br><br>			<b>Do I have to take part in this research study?</b><br>			Participation in this research study is voluntary. If you do not want to take part, you do not have to. If you decide to take part and later change your mind, you are free to withdraw from the study at any stage.<br><br>			<b>What does participation in this research require, and are there any risks involved?</b><br>If you decide to take part in this research study, we will ask you to provide information about yourself, including your UNSW student number, your age and gender, as well as information regarding your current and previous course enrolment at UNSW. 
+    You will answer some questions about your approach to schoolwork. You will be asked to type a number of words backwards and then will engage in a series of choices 
+    between rewards that either do or do not require effort. At the end, you will be asked whether you provide consent to one final question. We don&apos;t expect this 
+    research to cause any harm. However, you may skip any or all written or verbal questions if you wish.  Please let the researchers know if you need any assistance for any reason.<br><br>     <b>What are the possible benefits to participation?</b><br>     We cannot promise that you will receive any benefits from this study, but we hope to use the findings from this study to better understand people&apos;s approaches to effort. <br><br>			<b>What will happen to information about me?</b><br>			The information that you give us will be stored indefinitely after the project&apos;s completion. Although your UNSW Student ID will initially be linked with your data, it will be removed upon the study&apos;s completion, at which point your data will be deidentified, with your Student ID replaced with non-identifiable, unique participant identifier numbers.  		Researchers at UNSW are requested to store their aggregated research data in the UNSW data repository, this is a system called ResData. Once the aggregated data are deposited into this repository, they will be retained in this system permanently, but in a format where your data will not be individually identifiable.			Answers that you give during the study may be used for publication, and may be shared with other researchers. However this data will be de-identified meaning that it will not be linked to personal information about you.<br><br>			<b>Total Participation Time and Recompense to Participants</b><br>			In total, participation in this study will require about 30 minutes. You will receive 0.5 credit points as recompense for your participation. </b> <br><br>			<b>How and when will I find out what the results of the research study are?</b><br>			The research team intend to publish and/ report the results of the research study in a variety of ways. All information published will be done in a way that will not identify you. If you would like to receive a copy of the results you can let the research team know by e-mailing A/Prof Steven Most (s.most@unsw.edu.au). We will only use these details to send you the results of the research.</b> <br><br>			<b>Inquiries</b><br>			If you have any questions or concerns following your participation, A/Prof Steven Most (+61 2 9385 3827, email. s.most@unsw.edu.au) will be happy to address them. Complaints about the study may be directed to UNSW Human Research Ethics Coordinator, (phone +61 2 9385 6222, email humanethics@unsw.edu.au).<br><br> 			Please read this consent form before proceeding (you can download the pdf <a href=""consent_form.pdf"" target=""_blank"">here</a>).<br>			<br>			<p style=""text-align:center;""><b>PARTICIPANT CONSENT</b></p>			<p style=""text-align:left;font-size:90%;margin:16px 80px;"">By continuing, you are making a decision whether or not to participate.  Clicking the button below indicates that, having read the information provided on the participant information sheet and consent form, you have decided to participate.<br><br></p>","","html-button-response","2","5440","6s7kfv","","0","","","","","","","","",""
+"7539","","","survey-html-form","3","12982","6s7kfv","","","{""student_id"":""5317359"",""age"":""22"",""gender"":""female""}","","","","","","","",""
+"11759","","","survey-html-form","4","24742","6s7kfv","","","{""q1"":""PSYC1B "",""q2"":""yes""}","","","","","","","",""
+"2140.9999999999964","<div style=color:red;'><b><h1 style='text-align:center; width:100%;'>Please make sure you are in a<br></br>distraction free space.<br></br><br></br>This includes turning off your phone and any<br></br>other notifications.<br></br><br></br>This task will take 30 minutes to complete.</h1></div><br></br>","","html-button-response","5","26885","6s7kfv","","0","","","","","","","","",""
+"","","","fullscreen","6","28983","6s7kfv","","","","true","","","","","","",""
+"1151","","","instructions","7","30137","6s7kfv","","","","","[{""page_index"":0,""viewing_time"":1150}]","","","","","",""
+"14658","","","survey-likert","8","44798","6s7kfv","","","{""Q0"":-1,""Q1"":-1,""Q2"":1,""Q3"":-1,""Q4"":-1}","","","[0,1,2,3,4]","-3","","","",""
+"2088","","","instructions","9","46889","6s7kfv","","","","","[{""page_index"":0,""viewing_time"":2088}]","","","","","",""
+"299251.00000000006","","","survey-text","10","346133","6s7kfv","","","{""NAME OF WORDARRAY"":""htuom erutaef hsalf tolrah dimuh ystug eparg erehpsomta noegdulb tnirpmi bulc dnomaid kcirb erehwyna gnilwab snug drazah elbarolped cirabrab hself llub suoregnad ciremun raguoc ehcadaeh retfird hctah gnirb noitaredef sseltimil tsieh enobralloc yhtlaeh lanoitcif nif nessetaciled ylgnizama noinummoc emoceb ecilpmocca tneuqerf sselhtiaf suoedih citpyrc erupmi noitatupmoc erehwesle lavinrac ecnerehda elinevuj""}","","","","","","","",""
+"994","","","instructions","11","347127","6s7kfv","","","","","[{""page_index"":0,""viewing_time"":993}]","","","","","",""
+"3577","Press 'A' or 'L' to choose which option you would prefer  <i><b>right now</b></i>:
+            <br></br><b>A</b> - <b>$12</b> for doing nothing <i><b>right now</b></i> 
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>50 words <i><b>right now</b></i></b>","65","html-keyboard-response","12","350706","6s7kfv","","","","","","","","0","12","0","50"
+"2049","Press 'A' or 'L' to choose which option you would prefer  <i><b>right now</b></i>:
+            <br></br><b>A</b> - <b>$6</b> for doing nothing <i><b>right now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>50 words <i><b>right now</b></i></b>","65","html-keyboard-response","13","353260","6s7kfv","","","","","","","","0","6","0","50"
+"4461","Press 'A' or 'L' to choose which option you would prefer  <i><b>right now</b></i>:
+            <br></br><b>A</b> - <b>$3</b> for doing nothing <i><b>right now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>50 words <i><b>right now</b></i></b>","76","html-keyboard-response","14","358226","6s7kfv","","","","","","","","0","3","0","50"
+"1386","Press 'A' or 'L' to choose which option you would prefer  <i><b>right now</b></i>:
+            <br></br><b>A</b> - <b>$4</b> for doing nothing <i><b>right now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>50 words <i><b>right now</b></i></b>","76","html-keyboard-response","15","360115","6s7kfv","","","","","","","","0","4","0","50"
+"970","Press 'A' or 'L' to choose which option you would prefer  <i><b>right now</b></i>:
+            <br></br><b>A</b> - <b>$5</b> for doing nothing <i><b>right now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>50 words <i><b>right now</b></i></b>","76","html-keyboard-response","16","361593","6s7kfv","","","","","","","","0","5","6","50"
+"2602.000000000058","","","instructions","17","364697","6s7kfv","","","","","[{""page_index"":0,""viewing_time"":2602.000000000058}]","","","0","","",""
+"2693","Press 'A' or 'L' to choose which option you would prefer  <i><b>right now</b></i>:
+            <br></br><b>A</b> - <b>$12</b> for doing nothing <i><b>right now</b></i> 
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>75 words <i><b>right now</b></i></b>","65","html-keyboard-response","18","367392","6s7kfv","","","","","","","","0","12","0","75"
+"1652.0000000000582","Press 'A' or 'L' to choose which option you would prefer  <i><b>right now</b></i>:
+            <br></br><b>A</b> - <b>$6</b> for doing nothing <i><b>right now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>75 words <i><b>right now</b></i></b>","65","html-keyboard-response","19","369548","6s7kfv","","","","","","","","0","6","0","75"
+"526","Press 'A' or 'L' to choose which option you would prefer  <i><b>right now</b></i>:
+            <br></br><b>A</b> - <b>$3</b> for doing nothing <i><b>right now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>75 words <i><b>right now</b></i></b>","65","html-keyboard-response","20","370579","6s7kfv","","","","","","","","0","3","0","75"
+"1798","Press 'A' or 'L' to choose which option you would prefer  <i><b>right now</b></i>:
+            <br></br><b>A</b> - <b>$1</b> for doing nothing <i><b>right now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>75 words <i><b>right now</b></i></b>","76","html-keyboard-response","21","372882","6s7kfv","","","","","","","","0","1","0","75"
+"902","Press 'A' or 'L' to choose which option you would prefer  <i><b>right now</b></i>:
+            <br></br><b>A</b> - <b>$2</b> for doing nothing <i><b>right now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>75 words <i><b>right now</b></i></b>","76","html-keyboard-response","22","374288","6s7kfv","","","","","","","","0","2","3","75"
+"1258.0000000000582","","","instructions","23","376048","6s7kfv","","","","","[{""page_index"":0,""viewing_time"":1258.0000000000582}]","","","0","","",""
+"3288","Press 'A' or 'L' to choose which option you would prefer  <i><b>right now</b></i>:
+            <br></br><b>A</b> - <b>$8</b> for doing nothing <i><b>right now</b></i> 
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>25 words <i><b>right now</b></i></b>","76","html-keyboard-response","24","379336","6s7kfv","","","","","","","","0","8","0","25"
+"2398.999999999942","Press 'A' or 'L' to choose which option you would prefer  <i><b>right now</b></i>:
+            <br></br><b>A</b> - <b>$14</b> for doing nothing <i><b>right now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>25 words <i><b>right now</b></i></b>","76","html-keyboard-response","25","382240","6s7kfv","","","","","","","","0","14","0","25"
+"707","Press 'A' or 'L' to choose which option you would prefer  <i><b>right now</b></i>:
+            <br></br><b>A</b> - <b>$17</b> for doing nothing <i><b>right now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>25 words <i><b>right now</b></i></b>","76","html-keyboard-response","26","383450","6s7kfv","","","","","","","","0","17","0","25"
+"741","Press 'A' or 'L' to choose which option you would prefer  <i><b>right now</b></i>:
+            <br></br><b>A</b> - <b>$19</b> for doing nothing <i><b>right now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>25 words <i><b>right now</b></i></b>","65","html-keyboard-response","27","384696","6s7kfv","","","","","","","","0","19","0","25"
+"978","Press 'A' or 'L' to choose which option you would prefer  <i><b>right now</b></i>:
+            <br></br><b>A</b> - <b>$18</b> for doing nothing <i><b>right now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>25 words <i><b>right now</b></i></b>","76","html-keyboard-response","28","386179","6s7kfv","","","","","","","","0","18","19","25"
+"1203","","","instructions","29","387884","6s7kfv","","","","","[{""page_index"":0,""viewing_time"":1203}]","","","0","","",""
+"5066","Press 'A' or 'L' to choose which option you would prefer  <i><b>right now</b></i>:
+            <br></br><b>A</b> - <b>$9</b> for doing nothing <i><b>right now</b></i> 
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>100 words <i><b>right now</b></i></b>","65","html-keyboard-response","30","392952","6s7kfv","","","","","","","","0","9","0","100"
+"495","Press 'A' or 'L' to choose which option you would prefer  <i><b>right now</b></i>:
+            <br></br><b>A</b> - <b>$4</b> for doing nothing <i><b>right now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>100 words <i><b>right now</b></i></b>","65","html-keyboard-response","31","393952","6s7kfv","","","","","","","","0","4","0","100"
+"1055","Press 'A' or 'L' to choose which option you would prefer  <i><b>right now</b></i>:
+            <br></br><b>A</b> - <b>$2</b> for doing nothing <i><b>right now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>100 words <i><b>right now</b></i></b>","65","html-keyboard-response","32","395512","6s7kfv","","","","","","","","0","2","0","100"
+"435","Press 'A' or 'L' to choose which option you would prefer  <i><b>right now</b></i>:
+            <br></br><b>A</b> - <b>$1</b> for doing nothing <i><b>right now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>100 words <i><b>right now</b></i></b>","65","html-keyboard-response","33","396450","6s7kfv","","","","","","","","0","1","1","100"
+"1187","","","instructions","34","398139","6s7kfv","","","","","[{""page_index"":0,""viewing_time"":1187}]","","","0","","",""
+"1755","","","instructions","35","399895","6s7kfv","","","","","[{""page_index"":0,""viewing_time"":1755}]","","","","","",""
+"3214","Press 'A' or 'L' to choose which option you would prefer  <i><b>one day from now</b></i>:
+            <br></br><b>A</b> - <b>$10</b> for doing nothing <i><b>one day from now</b></i> 
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>50 words <i><b>one day from now</b></i></b>","76","html-keyboard-response","36","403110","6s7kfv","","","","","","","","1","10","0","50"
+"2213","Press 'A' or 'L' to choose which option you would prefer  <i><b>one day from now</b></i>:
+            <br></br><b>A</b> - <b>$15</b> for doing nothing <i><b>one day from now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>50 words <i><b>one day from now</b></i></b>","65","html-keyboard-response","37","405825","6s7kfv","","","","","","","","1","15","0","50"
+"466","Press 'A' or 'L' to choose which option you would prefer  <i><b>one day from now</b></i>:
+            <br></br><b>A</b> - <b>$12</b> for doing nothing <i><b>one day from now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>50 words <i><b>one day from now</b></i></b>","76","html-keyboard-response","38","406795","6s7kfv","","","","","","","","1","12","0","50"
+"558","Press 'A' or 'L' to choose which option you would prefer  <i><b>one day from now</b></i>:
+            <br></br><b>A</b> - <b>$13</b> for doing nothing <i><b>one day from now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>50 words <i><b>one day from now</b></i></b>","65","html-keyboard-response","39","407856","6s7kfv","","","","","","","","1","13","13","50"
+"1712","","","instructions","40","410069","6s7kfv","","","","","[{""page_index"":0,""viewing_time"":1711}]","","","1","","",""
+"3065","Press 'A' or 'L' to choose which option you would prefer  <i><b>one day from now</b></i>:
+            <br></br><b>A</b> - <b>$9</b> for doing nothing <i><b>one day from now</b></i> 
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>75 words <i><b>one day from now</b></i></b>","65","html-keyboard-response","41","413139","6s7kfv","","","","","","","","1","9","0","75"
+"305","Press 'A' or 'L' to choose which option you would prefer  <i><b>one day from now</b></i>:
+            <br></br><b>A</b> - <b>$4</b> for doing nothing <i><b>one day from now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>75 words <i><b>one day from now</b></i></b>","76","html-keyboard-response","42","413947","6s7kfv","","","","","","","","1","4","0","75"
+"375","Press 'A' or 'L' to choose which option you would prefer  <i><b>one day from now</b></i>:
+            <br></br><b>A</b> - <b>$6</b> for doing nothing <i><b>one day from now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>75 words <i><b>one day from now</b></i></b>","65","html-keyboard-response","43","414827","6s7kfv","","","","","","","","1","6","0","75"
+"485","Press 'A' or 'L' to choose which option you would prefer  <i><b>one day from now</b></i>:
+            <br></br><b>A</b> - <b>$5</b> for doing nothing <i><b>one day from now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>75 words <i><b>one day from now</b></i></b>","65","html-keyboard-response","44","415817","6s7kfv","","","","","","","","1","5","5","75"
+"949","","","instructions","45","417268","6s7kfv","","","","","[{""page_index"":0,""viewing_time"":948.0000000000582}]","","","1","","",""
+"2401","Press 'A' or 'L' to choose which option you would prefer  <i><b>one day from now</b></i>:
+            <br></br><b>A</b> - <b>$9</b> for doing nothing <i><b>one day from now</b></i> 
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>25 words <i><b>one day from now</b></i></b>","76","html-keyboard-response","46","419670","6s7kfv","","","","","","","","1","9","0","25"
+"211","Press 'A' or 'L' to choose which option you would prefer  <i><b>one day from now</b></i>:
+            <br></br><b>A</b> - <b>$15</b> for doing nothing <i><b>one day from now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>25 words <i><b>one day from now</b></i></b>","76","html-keyboard-response","47","420384","6s7kfv","","","","","","","","1","15","0","25"
+"362","Press 'A' or 'L' to choose which option you would prefer  <i><b>one day from now</b></i>:
+            <br></br><b>A</b> - <b>$18</b> for doing nothing <i><b>one day from now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>25 words <i><b>one day from now</b></i></b>","76","html-keyboard-response","48","421250","6s7kfv","","","","","","","","1","18","0","25"
+"529.9999999999418","Press 'A' or 'L' to choose which option you would prefer  <i><b>one day from now</b></i>:
+            <br></br><b>A</b> - <b>$19</b> for doing nothing <i><b>one day from now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>25 words <i><b>one day from now</b></i></b>","76","html-keyboard-response","49","422285","6s7kfv","","","","","","","","1","19","0","25"
+"4882","Press 'A' or 'L' to choose which option you would prefer  <i><b>one day from now</b></i>:
+            <br></br><b>A</b> - <b>$20</b> for doing nothing <i><b>one day from now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>25 words <i><b>one day from now</b></i></b>","65","html-keyboard-response","50","427671","6s7kfv","","","","","","","","1","20","20","25"
+"903","","","instructions","51","429075","6s7kfv","","","","","[{""page_index"":0,""viewing_time"":903}]","","","1","","",""
+"2203.000000000058","Press 'A' or 'L' to choose which option you would prefer  <i><b>one day from now</b></i>:
+            <br></br><b>A</b> - <b>$12</b> for doing nothing <i><b>one day from now</b></i> 
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>100 words <i><b>one day from now</b></i></b>","65","html-keyboard-response","52","431279","6s7kfv","","","","","","","","1","12","0","100"
+"203","Press 'A' or 'L' to choose which option you would prefer  <i><b>one day from now</b></i>:
+            <br></br><b>A</b> - <b>$6</b> for doing nothing <i><b>one day from now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>100 words <i><b>one day from now</b></i></b>","65","html-keyboard-response","53","431986","6s7kfv","","","","","","","","1","6","0","100"
+"198","Press 'A' or 'L' to choose which option you would prefer  <i><b>one day from now</b></i>:
+            <br></br><b>A</b> - <b>$3</b> for doing nothing <i><b>one day from now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>100 words <i><b>one day from now</b></i></b>","65","html-keyboard-response","54","432688","6s7kfv","","","","","","","","1","3","0","100"
+"116","Press 'A' or 'L' to choose which option you would prefer  <i><b>one day from now</b></i>:
+            <br></br><b>A</b> - <b>$1</b> for doing nothing <i><b>one day from now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>100 words <i><b>one day from now</b></i></b>","65","html-keyboard-response","55","433307","6s7kfv","","","","","","","","1","1","1","100"
+"958.0000000000582","","","instructions","56","434766","6s7kfv","","","","","[{""page_index"":0,""viewing_time"":957}]","","","1","","",""
+"3394","","","instructions","57","438162","6s7kfv","","","","","[{""page_index"":0,""viewing_time"":3393}]","","","","","",""
+"3987","Press 'A' or 'L' to choose which option you would prefer  <i><b>one month from now</b></i>:
+            <br></br><b>A</b> - <b>$11</b> for doing nothing <i><b>one month from now</b></i> 
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>50 words <i><b>one month from now</b></i></b>","76","html-keyboard-response","58","442150","6s7kfv","","","","","","","","2","11","0","50"
+"800","Press 'A' or 'L' to choose which option you would prefer  <i><b>one month from now</b></i>:
+            <br></br><b>A</b> - <b>$16</b> for doing nothing <i><b>one month from now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>50 words <i><b>one month from now</b></i></b>","76","html-keyboard-response","59","443453","6s7kfv","","","","","","","","2","16","0","50"
+"499","Press 'A' or 'L' to choose which option you would prefer  <i><b>one month from now</b></i>:
+            <br></br><b>A</b> - <b>$18</b> for doing nothing <i><b>one month from now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>50 words <i><b>one month from now</b></i></b>","76","html-keyboard-response","60","444455","6s7kfv","","","","","","","","2","18","0","50"
+"765","Press 'A' or 'L' to choose which option you would prefer  <i><b>one month from now</b></i>:
+            <br></br><b>A</b> - <b>$19</b> for doing nothing <i><b>one month from now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>50 words <i><b>one month from now</b></i></b>","65","html-keyboard-response","61","445722","6s7kfv","","","","","","","","2","19","19","50"
+"1076.0000000000582","","","instructions","62","447302","6s7kfv","","","","","[{""page_index"":0,""viewing_time"":1075}]","","","2","","",""
+"3274","Press 'A' or 'L' to choose which option you would prefer  <i><b>one month from now</b></i>:
+            <br></br><b>A</b> - <b>$7</b> for doing nothing <i><b>one month from now</b></i> 
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>75 words <i><b>one month from now</b></i></b>","76","html-keyboard-response","63","450577","6s7kfv","","","","","","","","2","7","0","75"
+"383.0000000000582","Press 'A' or 'L' to choose which option you would prefer  <i><b>one month from now</b></i>:
+            <br></br><b>A</b> - <b>$14</b> for doing nothing <i><b>one month from now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>75 words <i><b>one month from now</b></i></b>","76","html-keyboard-response","64","451463","6s7kfv","","","","","","","","2","14","0","75"
+"118","Press 'A' or 'L' to choose which option you would prefer  <i><b>one month from now</b></i>:
+            <br></br><b>A</b> - <b>$17</b> for doing nothing <i><b>one month from now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>75 words <i><b>one month from now</b></i></b>","65","html-keyboard-response","65","452086","6s7kfv","","","","","","","","2","17","0","75"
+"461.0000000000582","Press 'A' or 'L' to choose which option you would prefer  <i><b>one month from now</b></i>:
+            <br></br><b>A</b> - <b>$15</b> for doing nothing <i><b>one month from now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>75 words <i><b>one month from now</b></i></b>","65","html-keyboard-response","66","453053","6s7kfv","","","","","","","","2","15","15","75"
+"908","","","instructions","67","454462","6s7kfv","","","","","[{""page_index"":0,""viewing_time"":908}]","","","2","","",""
+"1142","Press 'A' or 'L' to choose which option you would prefer  <i><b>one month from now</b></i>:
+            <br></br><b>A</b> - <b>$11</b> for doing nothing <i><b>one month from now</b></i> 
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>25 words <i><b>one month from now</b></i></b>","76","html-keyboard-response","68","455605","6s7kfv","","","","","","","","2","11","0","25"
+"158.0000000000582","Press 'A' or 'L' to choose which option you would prefer  <i><b>one month from now</b></i>:
+            <br></br><b>A</b> - <b>$16</b> for doing nothing <i><b>one month from now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>25 words <i><b>one month from now</b></i></b>","65","html-keyboard-response","69","456266","6s7kfv","","","","","","","","2","16","0","25"
+"597.0000000000582","Press 'A' or 'L' to choose which option you would prefer  <i><b>one month from now</b></i>:
+            <br></br><b>A</b> - <b>$13</b> for doing nothing <i><b>one month from now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>25 words <i><b>one month from now</b></i></b>","65","html-keyboard-response","70","457367","6s7kfv","","","","","","","","2","13","0","25"
+"483","Press 'A' or 'L' to choose which option you would prefer  <i><b>one month from now</b></i>:
+            <br></br><b>A</b> - <b>$12</b> for doing nothing <i><b>one month from now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>25 words <i><b>one month from now</b></i></b>","65","html-keyboard-response","71","458354","6s7kfv","","","","","","","","2","12","12","25"
+"1640","","","instructions","72","460498","6s7kfv","","","","","[{""page_index"":0,""viewing_time"":1640}]","","","2","","",""
+"1755","Press 'A' or 'L' to choose which option you would prefer  <i><b>one month from now</b></i>:
+            <br></br><b>A</b> - <b>$11</b> for doing nothing <i><b>one month from now</b></i> 
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>100 words <i><b>one month from now</b></i></b>","65","html-keyboard-response","73","462254","6s7kfv","","","","","","","","2","11","0","100"
+"292","Press 'A' or 'L' to choose which option you would prefer  <i><b>one month from now</b></i>:
+            <br></br><b>A</b> - <b>$5</b> for doing nothing <i><b>one month from now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>100 words <i><b>one month from now</b></i></b>","65","html-keyboard-response","74","463049","6s7kfv","","","","","","","","2","5","0","100"
+"212.9999999999418","Press 'A' or 'L' to choose which option you would prefer  <i><b>one month from now</b></i>:
+            <br></br><b>A</b> - <b>$2</b> for doing nothing <i><b>one month from now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>100 words <i><b>one month from now</b></i></b>","65","html-keyboard-response","75","463765","6s7kfv","","","","","","","","2","2","0","100"
+"567","Press 'A' or 'L' to choose which option you would prefer  <i><b>one month from now</b></i>:
+            <br></br><b>A</b> - <b>$1</b> for doing nothing <i><b>one month from now</b></i>
+            <br><br>OR<br><br>
+            <b>L</b> - <b> $20</b> for typing <b>100 words <i><b>one month from now</b></i></b>","65","html-keyboard-response","76","464836","6s7kfv","","","","","","","","2","1","1","100"
+"862","","","instructions","77","466201","6s7kfv","","","","","[{""page_index"":0,""viewing_time"":861.0000000000582}]","","","2","","",""
+"4267","<p style=""text-align:center;""><b>THE UNIVERSITY OF NEW SOUTH WALES<br>FINAL CONSENT STATEMENT</b><br></p><p style=""text-align:left;line-height:190%;margin:16px 80px;"">Thank you for participating in this study! <br><br> The investigators of this study request permission to access your class grades for the PSYC 1A and/or 1B.This will be used to examine relationships between self-reported procrastination, effort related decisions in the lab task, date of experiment participation, and grades. Only the academic staff member of this project will have access to information linking your student ID with your grades. <br><br>Once your grades have been collected and matched with data from this current study, your student ID numbers will be removed from the data and replaced with non-identifiable, unique participant identifier numbers. <br><br><b><i>I agree to have the researchers of this experiment collect my class grades for the PSYC 1A and/or 1B course. <br><br>I understand that I am allowed to withhold permission and that withholding my permission will not affect my relationship with UNSW in any way. <br><br>I grant permission for the researchers to access my PSYC 1A and/or 1B class grades.</i></b></p>","","html-button-response","78","470470","6s7kfv","","0","","","","","","","","",""
+"5115","<h1 style=""text-align:center;"">UNSW Sydney</h1>    <p style=""text-align:left;line-height:190%;margin:16px 80px;""><br>Thank you very much. The experiment is now complete. You may close this window. If you are interested in learning more about this study and its purpose please see below further information.</p><ol style=""text-align:left;line-height:190%;margin:16px 80px;"" type=""1""><li><b>  Research questions: </b><br></li><p style=""text-align:left;line-height:190%;"">Is there a correlation between an individual&apos;s self-reported procrastination tendencies and performance in an effort discounting task, and do these measures predict academic performance in PSYC 1A and 1B? Effort discounting refers to a tendency for people to select the lower of two rewards if it entails less effort to receive it. </p><li><b>  How does this study extend on previous research on this topic? </b><br></li><p style=""text-align:left;line-height:190%;"">Previous research (Johnson & Most, 2023) has demonstrated that people often engage in more effort discounting if the effort is imminent than when assigning the effort to their future selves. This may be considered an objective analogue of tendency to procrastinate effort. This study will extend on this research by investigating an additional characteristic, whether self-reported procrastination and effort discounting indeed correlate with each other. For those participants who grant permission, we will additionally test whether one or both measures predicts academicperformance in PSYC 1A and 1B.</p><li><b>  Potential real-world implications: </b><br></li><p style=""text-align:left;line-height:190%;"">Determining a correlation between self-reported procrastination and performance in effort discounting tasks has potential real-life implications in understanding the outcomes and consequences of procrastination. Procrastination is not unique to academic studies and can be experienced by everyone in their daily living. Therefore, by understanding the potential consequences of having higher traits of procrastination and whether it is correlated with people&apos;s decision making and/or performance in academic studies may lead to the development of strategies that people can adopt to avoid procrastination if we know it is in their best interest.</p><li><b>  Briefly describe a potential issue or limitation of the study </b><br></li><p style=""text-align:left;line-height:190%;"">A potential practical issue of this study is that participants may not provide consent for us to collect their grades. This will limit the effects we are able to observe, however if we are unable to collect this data, the study will still be valid in exploring the relationship between self-reported procrastination and effort discounting. A possible limitation of the study is also that it is to be conducted online with participants completing the experiment in their own time and space. This means there are limits to how controlled the study is and we cannot guarantee participants&apos; full focus and attention. However, the experiment will have clear instructions asking participants to be in a quiet, distraction free room and we will recruit a large sample size to ensure accurate average results. </p><li><b>  Briefly describe the study methodology </b><br></li><p style=""text-align:left;line-height:190%;"">The design of this study combines within-subjects manipulations of the amount timing of hypothetical effort and between-subjects measure of self-reported procrastination and PSYC 1A and 1B class grades. Dependent variables include score in Academic Procrastination Scale -Short Form, choices on effort discounting task, and PSYC 1A and 1B class grades. In the effort discounting task, independent variables are the level of effort (i.e., number of words typed backwards) and temporal distance (i.e., whether the effort is imagined to be imminent or in the future).</p><li><b>  Further readings </b><br></li><p style=""text-align:left;line-height:190%;"">Johnson, S. T., & Most, S. B. (2023). Taking the path of least resistance now, but not later: Pushing cognitive effort into the future reduces effort discounting. Psychon Bull Rev, 30(3), 1115-1124. https://doi.org/10.3758/s13423-022-02198-7 </ol>","","html-button-response","79","475587","6s7kfv","","0","","","","","","","","",""

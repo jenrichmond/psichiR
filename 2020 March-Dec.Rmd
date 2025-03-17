@@ -1,0 +1,184 @@
+---
+title: "psichi March-May 2020"
+author: ""
+date: ''
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# load packages
+```{r}
+library(tidyverse)
+library(here)
+library(janitor)
+```
+
+# read data 
+
+```{r}
+data <- read_csv(here("data", "PsichiR_pilot.csv"))
+```
+
+# March 2020
+
+For this contest, you will be using this dataset: https://osf.io/jfdtk/
+
+The data set is from this publication: https://cdn.ymaws.com/www.psichi.org/resource/resmgr/journal_2019/24_2_crambletalvarez.pdf
+
+A codebook can be found here: https://osf.io/bkd5m/
+
+
+## Level 1
+
+Level 1: Sort the data by GPA from low to high.
+
+## Level 2
+
+Level 2: Produce the means and standard deviations for the following variables:
+
+Male_score (recognition for male psychologists like Sigmund Freud; higher scores = more recognition)
+Female_score (recognition for psychologist women)
+POC_score (recognition for psychologists of color)
+White_score (recognition for white psychologists)
+
+
+## Level 3
+
+Level 3: Create a graph to compare the mean scores for recognition of women and for recognition of men.
+
+## Level 4
+
+Level 4: Run an independent-samples t-test comparing the mean recognition of women (Female_score) variable across male and female participants (Gender).
+
+
+
+# April 2020
+
+## Level 1
+
+Level 1: Remove participants with missing responses for the variable "Age."
+
+## Level 2
+
+Level 2: Provide frequencies of three different age groups: How many people are Less than or equal to 20? How many people between 21-40? How many people are Greater than 40?
+
+## Level 3
+
+Level 3: Create 4 graphs to visualize recognition of any 4 psychologists by age of participant.
+
+## Level 4
+
+Level 4: Run a simple linear regression analysis to determine if you can predict recognition of male psychologists from participant age.
+
+
+
+# May 2020
+
+## Level 1
+
+Level 1 (Data Processing): Write code that will compute all of the eight subscale scores (e.g. "Male_score). Note that these subscales are already present in the data set -- this will give you a good comparison to see if your code works.
+
+## Level 2
+
+Level 2 (Descriptive Statistics): Recreate Table 2 in the publication (bottom left of page 89) -- it doesn't have to look exactly the same, but it must have the same information as the three columns - Subscale, Mean Subscale (SD), and Median Subscale.
+
+## Level 3
+
+Level 3 (Data Visualization): Create a visualization that compares mean scores on the following subscales: women of color, white women, white men, and men of color.
+
+
+## Level 4
+
+
+Level 4 (Inferential Statistics): Write code that recreates the tests for Hypothesis 1 - paired sample non parametric wilcoxan signed ranks test (page 90). https://cdn.ymaws.com/www.psichi.org/resource/resmgr/journal_2019/24_2_crambletalvarez.pdf
+
+
+# read data 
+
+```{r}
+data <- read_csv(here("data", "NICE CROWD DATA.csv"))
+```
+
+
+# Sept 2020 
+
+Our September 2020 contest uses data from Psi Chi's NICE:CROWD project.
+
+
+Your tasks for the PsiChiR contest include:
+
+## Level 1
+
+Level 1: Remove cases that have missing values on "Countryborn"
+
+## Level 2
+
+Level 2: Find frequencies for the following variables: UserLanguage, Gender, and Race
+
+## Level 3
+Level 3: Create a scatterplot to visualize the relationship between vertical collectivism (COSvcollect) and horizontal collectivism (COShcollect)
+
+## Level 4
+
+Level 4: Calculate Pearson's R correlation coefficient between vertical collectivism and horizontal collectivism. 
+
+# Oct 2020
+
+Your tasks for the PsiChiR contest include:
+
+## Level 1
+
+Level 1: Create a new variable "Duration in minutes" by taking the variable "Duration__in_seconds_" and dividing it by 60.
+
+## Level 2
+
+Level 2: Find the median for this new variable.
+
+## Level 3
+
+Level 3: Create a bar graph to display medians for men and women.
+
+## Level 4
+
+Level 4: Test whether men and women differ on this variable.
+
+
+
+# Nov 2020
+
+Your tasks for the PsiChiR contest include:
+
+## Level 1
+
+Level 1: Recode the FACES satisfaction subscale ("FACEsatis") into three categories: Low (10 - 23), Medium (24 - 37), and High (38 - 50)
+
+## Level 2
+
+Level 2: Calculate the means and standard deviations for the following variables: SSBQTotal, FACEchaotic, and SDQprosocial.
+
+## Level 3
+Level 3: Create a bar graph to compare the SSBQTotal means across FACEsatis groups. Include 95% confidence interval error bars
+
+## Level 4
+Level 4: Test the hypothesis that SSBQTotal scores differ across the three FACEsatis groups.
+
+# Dec 2020
+
+Your tasks for the PsiChiR contest include:
+
+## Level 1
+
+Level 1: Subset and filter your data so you have a dataset that excludes participants with missing values for "Race" and "Gender", and includes only these two variables plus the variable "COShcollect" (horrizontal collectivism)
+
+## Level 2
+Level 2: Calculate the means and standard deviations for COShcollect for all gender categories.
+
+## Level 3
+Level 3: Create a line graph that displays mean COShcollect scores for different race categories, with separate lines for each gender.
+
+## Level 4
+
+Level 4: Conduct a factorial ANOVA to compare COShcollect scores across race and gender.

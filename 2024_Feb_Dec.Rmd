@@ -1,0 +1,537 @@
+---
+title: "psichi challenge template"
+output: html_document
+date: "2024-04-05"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Level 1 data processing
+Level 2 descriptive statistics
+Level 3 data visualisation
+Level 4 inferential statistics
+
+Data for this contest is from ...
+
+You can find the data for this study [here](...).
+
+
+To facilitate analyses, the ‘Runtime’ variable will need to be fixed so that ‘min’ is removed, and the column only contains numerical values.  
+
+To facilitate analyses, the ‘Genre’ variable will need to be edited so that each genre separated by a comma is listed in its own respective column. 
+
+## load packages
+
+```{r message=FALSE, warning=FALSE}
+library(tidyverse)
+library(here)
+library(janitor)
+
+```
+
+
+## read in the data
+
+```{r}
+
+imdb_top_1000 <- read_csv(here("data", "imdb_top_1000.csv"))
+
+```
+
+
+
+#  Feb 2024
+
+## Level 1: 
+
+
+To facilitate analyses, the ‘Runtime’ variable will need to be fixed so that ‘min’ is removed, and the column only contains numerical values.  
+
+To facilitate analyses, the ‘Genre’ variable will need to be edited so that each genre separated by a comma is listed in its own respective column. 
+
+
+```{r}
+
+
+```
+ 
+
+
+## Level 2: 
+
+Provide the mean, standard deviation, median, and range of values for ‘IMDB_Rating’ 
+
+Provide the mean, standard deviation, median, and range of values for ‘Gross’ 
+
+```{r}
+
+```
+ 
+
+## Level 3: 
+
+Provide the mean values for IMDB rating by Released Year
+
+What is the mean ‘IMDB_rating’ of Romance movies?  
+
+ 
+```{r}
+
+
+```
+
+## Level 4: 
+
+Create a plot that shows the average ‘IMDB_rating’ for Romance movies over time. 
+
+Find the star who was lead in the most romance movies 
+
+```{r}
+
+
+
+```
+
+
+#  March 2024
+
+This month’s data comes from Kaggle.com, we’ll be looking at the 50 most popular songs on Spotify. 
+
+
+## read in the data
+
+```{r}
+top_50_2023 <- read_csv(here("data", "top_50_2023.csv"))
+
+
+```
+
+
+## Level 1: 
+
+Let’s get familiar with our data. Create a table that shows how many times each genre is represented in the Top 50 most popular songs on Spotify. What is the most popular genre? 
+
+Which artist, if any, has the greatest number of Top 50 most popular songs on Spotify? 
+
+
+```{r}
+
+
+```
+
+
+## Level 2: 
+
+Provide the mean, standard deviation, median, and range of values for ‘danceability’ 
+
+Provide the mean, standard deviation, median, and range of values for ‘valence’ 
+
+Provide the mean, standard deviation, median, and range of values for ‘energy’ 
+```{r}
+
+```
+ 
+
+## Level 3: 
+
+Does the ‘tempo’ variable meet the assumption of normality?  
+
+Produce a visual that will show if the ‘loudness’ variable contains any outliers.  
+
+Is there a significant difference in the ratings of ‘danceability’ for explicit songs, compared to songs that are not explicit? Note all key statistics. 
+ 
+```{r}
+
+
+```
+
+## Level 4: 
+
+Create a regression model to figure out which of the following is the strongest predictor of popularity: danceability, valence, energy, loudness, acousticness. Instrumentalness, liveness, speechiness, or tempo. Please note all key statistics for each variable. 
+
+ 
+
+```{r}
+
+
+
+```
+
+## read in the data
+
+```{r}
+
+nice_may <- read_csv(here("data", "nice_data", "2024_May_NICE.csv"))
+
+```
+
+
+
+#  May 2024 NICE May.csv
+
+## Level 1: 
+
+Level 1: Data processing
+Write a script that will filter out participants who are missing a value for the ‘Siblings’ variable.
+
+
+
+```{r}
+
+
+```
+ 
+
+
+## Level 2: 
+
+Level 2: Descriptive Statistics
+Create a variable called ‘FACEdisen’ that measure family disengagement by adding the following items together: FACES3, FACES9, FACES15, FACES21, FACES27, FACES33, FACES39
+
+Create a variable called ‘FACEenmesh’ that measures family enmeshment by adding the following items:  FACES4, FACES10, FACES16, FACES22, FACES28, FACES34, FACES40
+
+Create a variable called ‘FACEcomm’ that measures family communication by adding together the following items: FACES43, FACES44, FACES45, FACES46, FACES47, FACES48, FACES49, FACES50, FACES51, FACES52
+
+Find the mean, standard deviation, median, and range for ‘FACEdisen’, ‘FACEenmesh’, and ‘FACEcomm’. Report the average number of siblings reported by participants and indicate the range. 
+
+
+```{r}
+
+```
+ 
+
+## Level 3: 
+
+
+Level 3: Data visualization
+Create a histogram for “FACEcomm”
+
+
+
+ 
+```{r}
+
+
+```
+
+## Level 4: 
+
+Level 4: Inferential statistics
+Test if there is an association between the number of siblings reported by participants and family disengagement, enmeshment, and communication. 
+
+```{r}
+
+
+
+```
+
+#  June 2024 pokemon
+
+## Level 1: 
+
+
+Level 1 -Let’s get familiar with our data. Create a table that shows the frequency of each type of Pokémon in the dataset (variable name: type1). Next, let’s look at the representation of each generation of Pokémon in the dataset. Create a table that shows the number of Pokémon in the dataset associated with each generation (variable name: generation)
+
+```{r}
+
+
+```
+ 
+
+## Level 2: 
+
+Level 2-Provide the mean, standard deviation, median, and range of values of attack stats (variable name: attack) for ‘Water’ type Pokémon (variable name: type1). -Provide the mean, standard deviation, median, and range of values of speed stats (variable name: speed) for ‘Dragon’ type Pokémon (variable name: type1). 
+
+```{r}
+
+```
+ 
+
+## Level 3: 
+
+-Level 3-Are there any outliers for the ‘total’ stat? What is the value(s), and which Pokémon(s) is/are associated with it?
+ 
+```{r}
+
+
+```
+
+## Level 4: 
+
+Level 4-Is there a correlation between a Pokémon’s ‘total’ stat and their base level of experience? (variable: base_exp)-Create a visualization that shows the average ‘total’ stat based on the primary type of the Pokémon (type1)
+```{r}
+
+
+
+```
+
+
+
+#  July 2024 summmer olympics
+
+## Level 1: 
+
+
+Level 1 -Let’s get familiar with our data. Create a table that shows the frequency of each Country in the dataset. 
+
+```{r}
+
+
+```
+ 
+
+## Level 2: 
+Level 2-Next, let’s look at the representation of each country’s medal status. Create atable that shows the number of times each country has won a bronze, silver, and gold medal. 
+
+```{r}
+
+```
+ 
+
+## Level 3: 
+
+Level 3-Is there a difference in the number of silver medals a country earns if they are competing in their home country? *Note please pick any one country you’d like to look at
+
+ 
+```{r}
+
+
+```
+
+## Level 4: 
+
+Level 4-Create a visualization that shows the United State’s gold medal over time.
+```{r}
+
+
+
+```
+
+
+
+#  Aug 2024 NICE
+
+## Level 1: 
+
+
+Codebook: https://osf.io/ey7ph
+
+Data processing (level 1)Filter out participants who have progress values less than 100Filter out participants who are missing values for age and for gender. 
+
+
+```{r}
+
+
+```
+ 
+
+## Level 2: 
+
+Descriptive Statistics (level 2)Create a variable called FACEcomm (Family Communication) by adding together the following items FACES43 + FACES44 + FACES45 + FACES46 + FACES47 + FACES48 + FACES49 + FACES50 + FACES51 + FACES52oNote the average, standard deviation, and median values for the FACEcomm variable. Find the range as well.
+```{r}
+
+```
+ 
+
+## Level 3: 
+
+Data visualization (level 3)Create a box plot of the FACEcomm variable to identify any outliersCreate a histogram on the FACEcomm variable to help visualize the distribution 
+ 
+```{r}
+
+
+```
+
+## Level 4: 
+
+Inferential statistics (level 4)If you identified outliers in the previous step, filter them out from the data.Is there a significant difference in FACEcomm between people who identify with ‘Religionnow’ = 1 and ‘Religionnow’ = 11?
+```{r}
+
+
+
+```
+
+
+
+#  Sept 2024 coffee
+
+## Level 1: 
+
+
+According to the National Day Calendar, National Coffee Day is September 29th(plus, with back to school in full swing, it seems appropriate)! This contest won’t keep you working late, we’ll keep it short and sweet (like espresso). Data processing (level 1)-Create a table that shows how many times each type of roast is represented in the data set.-Create a table that shows how many times each roaster is represented in the data set.
+```{r}
+
+
+```
+ 
+
+## Level 2: 
+
+Descriptive Statistics (level 2)-What is the average cost (USD) for 100 grams of coffee reviewed in the data set? What is the cost of the least and most expensive coffee?-What is the average rating of the coffee reviewed in the dataset? What is the most received rating? 
+
+```{r}
+
+```
+ 
+
+## Level 3: 
+Data visualization (level 3) -Create a table that shows the roast type and average ratings based on the roaster.-Create a graph that shows the cost (USD) for 100 grams of coffee based on the bean origin (origin 1)
+
+ 
+```{r}
+
+
+```
+
+## Level 4: 
+Inferential statistics (level 4)-Is there a significant difference in the rating between roasts? If so, which one(s)?
+
+```{r}
+
+
+
+```
+
+
+
+#  Oct 2024 horror
+
+## Level 1: 
+
+
+
+Data for this month’s contest uses IMDb's Horror Movie Dataset available through Kaggle.com
+
+Data processing (level 1)Write a script that will filter out movies that are missing a value in the ‘Budget,’ ‘RunTime,’ ‘ParentalRating’ and ‘Rating’ columns.Right now, the genre columns cannot be properly analyzed due to formatting (e.g., Action| Fantasy| Horror| Mystery| Romance). Write a script that will separate the column into multiple Genre categories.
+
+
+```{r}
+
+
+```
+ 
+
+## Level 2: 
+Descriptive Statistics (level 2)Write a script that will provide the average, standard deviation, median, and range of the ‘Rating’ variable. Note the values you got from running the codeWrite a script that will show the average ratings by a movie’s main genre. 
+
+```{r}
+
+```
+ 
+
+## Level 3: 
+
+Data visualization (level 3)Create a graph that shows the ‘Budget’ for the movies in the dataset over time. 
+ 
+```{r}
+
+
+```
+
+## Level 4: 
+
+Inferential statistics (level 4)Do movies with bigger budgets get better ratings?Do movies in the Horror genre get better ratings than Mystery movies? 
+```{r}
+
+
+
+```
+
+#  Nov 2024 stress
+
+## Level 1: 
+
+This month’s contest is based around the theme of stress. The first Wednesday in November is National Stress Awareness Day. This is an opportunity to think about the effects of stress, physically and mentally, as well as how we can manage feelings of stress.
+
+Codebook
+Person ID: An identifier for each individual.
+Gender: The gender of the person (Male/Female).
+Age: The age of the person in years
+Occupation: The occupation or profession of the person.
+Sleep Duration (hours): The number of hours the person sleeps per day.
+Quality of Sleep (scale: 1-10): A subjective rating of the quality of sleep, ranging from 1 to 10.
+Physical Activity Level (minutes/day): The number of minutes the person engages in physical activity daily.
+Stress Level (scale: 1-10): A subjective rating of the stress level experienced by the person, ranging from 1 to 10.
+Blood Pressure (systolic/diastolic): The blood pressure measurement of the person, indicated as systolic pressure over diastolic pressure.
+Heart Rate (bpm): The resting heart rate of the person in beats per minute.
+Daily Steps: The number of steps the person takes per day.
+Sleep Disorder: The presence or absence of a sleep disorder in the person (None, Insomnia, Sleep Apnea).
+
+Prompts
+Level 1: Write a script to create a visualization showing the distribution of the ‘Quality of Sleep’ variable. Write a script to identify any outliers present in the ‘Stress Level’ variable. Is ‘quality of sleep’ normally distributed? Are there any outliers present in ‘Stress Level?’
+
+```{r}
+
+
+```
+ 
+
+## Level 2: 
+Level 2: If you identify any outliers present in the ‘Stress Level’ variable, write a script that removes the outliers. Find the min, median, max, average, and standard deviation of ‘Stress Level,’ ‘Quality of Sleep,’ and ‘Physical Activity Level.’
+
+```{r}
+
+```
+ 
+
+## Level 3: 
+
+Level 3: Plot the relationship between ‘Age’ and ‘Quality of Sleep.’ Create a table to show the average ‘Stress Level’ by ‘Occupation.’ 
+ 
+```{r}
+
+
+```
+
+## Level 4: 
+
+Level 4: Is there a relationship between ‘Quality of Sleep’ and ‘Stress Level?’
+
+```{r}
+
+
+
+```
+
+
+
+#  Dec 2024 shopping
+## Level 1: 
+
+December 2024 Psi Chi R Level 1: Write a script that will remove participants who are missing the ‘age’ variable. Then, write a script that will show the distribution of the ‘rating’ variable. Is‘Review Rating’ skewed? 
+
+```{r}
+
+
+```
+ 
+
+## Level 2: 
+
+Level 2: Find the min, median, max, average, and standard deviation of ‘Review Rating’
+```{r}
+
+```
+ 
+
+## Level 3: 
+Level 3: Create a table that shows the average ‘Review Rating’ for each ‘Category.’ 
+ 
+```{r}
+
+
+```
+
+## Level 4: 
+ Level 4: Create a visualization showing the relationship between ‘Purchase Amount (USD)’ and ‘Review Rating.’ Test the correlation between the variables. What is the rvalue? What is the p value?
+
+
+```{r}
+
+
+
+```
+
+

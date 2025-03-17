@@ -41,7 +41,6 @@ library(janitor)
 
 ## Level 1: 
 
-Write script that will select participants who are 18+ years old
 
 
 ```{r}
@@ -50,9 +49,7 @@ Write script that will select participants who are 18+ years old
 ```
  
 
-
 ## Level 2: 
-
 
 
 ```{r}
@@ -63,6 +60,45 @@ Write script that will select participants who are 18+ years old
 ## Level 3: 
 
 
+ 
+```{r}
+
+
+```
+
+## Level 4: 
+
+
+```{r}
+
+
+
+```
+
+
+
+#  Month Year
+
+## Level 1: 
+
+
+
+```{r}
+
+
+```
+ 
+
+## Level 2: 
+
+
+```{r}
+
+```
+ 
+
+## Level 3: 
+
 
  
 ```{r}
@@ -72,6 +108,125 @@ Write script that will select participants who are 18+ years old
 
 ## Level 4: 
 
+
+```{r}
+
+
+
+```
+
+
+
+#  Month Year
+
+## Level 1: 
+
+
+
+```{r}
+
+
+```
+ 
+
+## Level 2: 
+
+
+```{r}
+
+```
+ 
+
+## Level 3: 
+
+
+ 
+```{r}
+
+
+```
+
+## Level 4: 
+
+
+```{r}
+
+
+
+```
+
+
+
+#  Month Year
+
+## Level 1: 
+
+
+
+```{r}
+
+
+```
+ 
+
+## Level 2: 
+
+
+```{r}
+
+```
+ 
+
+## Level 3: 
+
+
+ 
+```{r}
+
+
+```
+
+## Level 4: 
+
+
+```{r}
+
+
+
+```
+
+
+
+#  Month Year
+
+## Level 1: 
+
+
+
+```{r}
+
+
+```
+ 
+
+## Level 2: 
+
+
+```{r}
+
+```
+ 
+
+## Level 3: 
+
+
+ 
+```{r}
+
+
+```
+
+## Level 4: 
 
 
 ```{r}

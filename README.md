@@ -9,7 +9,10 @@ Here is a list of skills learned in each challenge, in case you want to learn so
 # 2020 March-Dec 
 
 Data re undergraduate psychology students inability to recognise pioneers 
-https://cdn.ymaws.com/www.psichi.org/resource/resmgr/journal_2019/24_2_crambletalvarez.pdf
+
+Cramblet Alvarez, L. D., Jones, K. N., Walljasper-Schuyler, C., Trujillo, M., Weiser, M. A., Rodriguez, J. L., ... & Leach, J. L. (2019). Psychology's Hidden Figures: Undergraduate Psychology Majors'(In) Ability to Recognize Our Diverse Pioneers. Psi Chi Journal of Psychological Research, 24.
+
+[PDF](https://cdn.ymaws.com/www.psichi.org/resource/resmgr/journal_2019/24_2_crambletalvarez.pdf)
 
 March 2020
 - sort/arrange data
@@ -31,6 +34,10 @@ May 2020
 
 
 PsiChi NICE:CROWD data re family dynamics in a cross cultural sample https://osf.io/qba7v/
+
+Rogers, M., Cuccolo, K., McKinney, C., Edlund, J., Grahe, J., Zlokovich, M., ... & Kalibatseva, Z. (2024). Understanding family dynamics in a cross-cultural sample: a multi-national study. Psi Chi Journal of Psychological Research, 29(2), 140-149.
+
+[PDF](https://gala.gre.ac.uk/id/eprint/46929/3/46929_EVANS_Understanding_family_dynamics_in_a_cross-cultural_sample_A_multinational_study.pdf)
 
 Sept 2020
 - filter
@@ -63,6 +70,10 @@ Dec 2020
 # 2021 Jan-Dec
 
 Article of model minority myth salience on white americans perception of black americans and their support for affimiration action from Lee & Outton (2020).
+
+Lee, T., & Outten, H. R. (2020). The effect of model minority myth salience on White Americans’ perceptions of Black Americans and their support for affirmative action. Psi Chi journal of psychological research, 25(1), 
+
+[PDF](https://osf.io/download/97gs2)
 
 Jan 2021
 - filter
@@ -123,11 +134,15 @@ Sept 2021
 - calculate chi square
 
 
-Data re the effect of differential susceptibility to social influence on endorsement of college hookup culture data from Goyette & Spencer (2021).
+Data re the effect of differential susceptibility to social influence on endorsement of college hookup culture data.
 
 https://osf.io/v4yhu/ contains information about the study.
 
 https://osf.io/9chb7/ contains an SPSS (.sav) file
+
+Goyette, S. E., & Spencer, B. (2021). The effect of differential susceptibility to social influence on endorsement of college hookup culture. Journal of Psychological Research, 26(2), 185-198.
+
+[PDF](https://d1wqtxts1xzle7.cloudfront.net/96103345/26_2_goyette-libre.pdf?1671552411=&response-content-disposition=inline%3B+filename%3DThe_Effect_of_Differential_Susceptibilit.pdf&Expires=1782352414&Signature=KpLSHD5ktTFvAOJN57XaCkXPlDFtlZXqoP6TZGDbNcOTeRwmhH9sPNKyHvXz7QNaTf0kqTVpqmOF1mv9UZbo7dl4svCQOVK2YWZYzsQ5WhIcwPxS0HGHFpB14mpVz4e0WUqBRB-HiyAens9Y8Oi~DRtEMvoFzExTAg0A7K0n1J81GZ2w3fhsYb~ilkx6FhmtpNhBqEOIV7r1r9HIcqidCUdtSknDasZ2582eSVEo7nfvMyHx-CbUGkF3Rnfqliu8S33SdFLJQaRaNdnadSIXHxcnkqpU4-ibz6FepzUnx4JBc1jAWOpBRvVKoJg1tpg9dgMHIMGJj-Ek07GGs9ij8w__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA)
 
 Oct 2021
 
@@ -155,6 +170,11 @@ Dec 2021
 # 2022 Feb-Dec
 
 Data re need for cognition, womens implicit associations [Olshan, Vitiello, & Ratliff (2021)](https://cdn.ymaws.com/www.psichi.org/resource/resmgr/journal_2021/26_3_Olshan.pdf)
+
+Olshan, S. M., Vitiello, C., & Ratliff, K. A. (2021). Need for Cognition and Women's Implicit Associations: Breaking Stereotypes?. Psi Chi Journal of Psychological Research, 26(3).
+
+[PDF](https://cdn.ymaws.com/www.psichi.org/resource/resmgr/journal_2021/26_3_Olshan.pdf)
+
 
 Feb 2022
 
